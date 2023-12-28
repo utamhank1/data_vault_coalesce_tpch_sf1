@@ -1,4 +1,4 @@
-defaultStorageMapping: CORE
+defaultStorageMapping: WORK
 installedPackages: {}
 jobs: {}
 locations: {}
@@ -551,9 +551,7 @@ macros:
            {{- result|join(delimiter) -}}
       {%- endmacro -%}
 packages: {}
-projects:
-   "1":
-     name: SCALEFREE-DATAVAULT4COALESCE
+projects: {}
 stepTypes:
   StepType-12:
     id: "12"
