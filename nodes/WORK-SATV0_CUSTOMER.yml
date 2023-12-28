@@ -18,6 +18,8 @@ steps:
           - columnReference:
               columnCounter: c2ee87b2-9565-4f5d-afdf-8b3432181c37
               stepCounter: 1454af6b-ae6c-4ce3-985c-4f38c53154e4
+            config:
+              is_hk: true
             dataType: STRING
             description: ""
             hashColumns: []
@@ -32,6 +34,8 @@ steps:
           - columnReference:
               columnCounter: 9c7be510-8828-46a9-8053-5ad3b9d3283f
               stepCounter: 1454af6b-ae6c-4ce3-985c-4f38c53154e4
+            config:
+              is_hd: true
             dataType: STRING
             description: ""
             hashColumns: []
