@@ -24,7 +24,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
@@ -44,7 +43,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
@@ -64,7 +62,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
@@ -94,7 +91,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
@@ -110,8 +106,6 @@ steps:
               stepCounter: 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
             dataType: NUMBER(38,0)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: C_CUSTKEY
             nullable: false
             sourceColumnReferences:
@@ -124,8 +118,6 @@ steps:
               stepCounter: 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
             dataType: VARCHAR(25)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: C_NAME
             nullable: false
             sourceColumnReferences:
@@ -138,8 +130,6 @@ steps:
               stepCounter: 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
             dataType: VARCHAR(40)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: C_ADDRESS
             nullable: false
             sourceColumnReferences:
@@ -152,8 +142,6 @@ steps:
               stepCounter: 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
             dataType: NUMBER(38,0)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: C_NATIONKEY
             nullable: false
             sourceColumnReferences:
@@ -166,8 +154,6 @@ steps:
               stepCounter: 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
             dataType: VARCHAR(15)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: C_PHONE
             nullable: false
             sourceColumnReferences:
@@ -180,8 +166,6 @@ steps:
               stepCounter: 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
             dataType: NUMBER(12,2)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: C_ACCTBAL
             nullable: false
             sourceColumnReferences:
@@ -194,8 +178,6 @@ steps:
               stepCounter: 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: C_MKTSEGMENT
             nullable: true
             sourceColumnReferences:
@@ -208,8 +190,6 @@ steps:
               stepCounter: 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
             dataType: VARCHAR(117)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: C_COMMENT
             nullable: true
             sourceColumnReferences:
@@ -228,7 +208,6 @@ steps:
             dataType: TIMESTAMP
             defaultValue: ""
             description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
-            hashColumns: []
             is_system_ldts: true
             name: LDTS
             nullable: true
@@ -246,7 +225,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: The Record Source (RSRC) describes the source of this data.
-            hashColumns: []
             is_system_rsrc: true
             name: RSRC
             nullable: true
