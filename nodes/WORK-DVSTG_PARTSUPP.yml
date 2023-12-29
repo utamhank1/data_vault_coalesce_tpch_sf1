@@ -13,13 +13,93 @@ steps:
       metadata:
         appliedNodeTests: []
         columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ad7463bf-a1b6-4db2-b4d3-c2902ad03096
+              stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 49a7e87e-5d55-45ca-bb0f-31c126f97002
+                stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+            name: HK_PARTKEY_H
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1a7a7003-8d8c-4fff-8354-3a662138c1e6
+              stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 8fea0e9d-6ced-46ae-87cd-12b3f214d0b2
+                stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+            name: HK_SUPPKEY_H
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d185b261-42e5-4a36-8d79-10ac788a810f
+              stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 72ca140b-e61c-4aec-a5a3-71166b0fdf41
+                stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+              - columnCounter: d25f0a78-9aa1-4ba8-9db4-e440a492e606
+                stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+              - columnCounter: 9c291f99-2460-4ecb-9360-f458af342366
+                stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+            name: HK_PARTSUPP_N_S
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f6613d5c-85ef-4d34-8fd6-d375b10c0958
+              stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 49a7e87e-5d55-45ca-bb0f-31c126f97002
+                stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+              - columnCounter: 8fea0e9d-6ced-46ae-87cd-12b3f214d0b2
+                stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+            name: HK_PARTSUPP_SUPPLIER_L
+            nullable: true
+            sourceColumnReferences: []
           - columnReference:
               columnCounter: 49a7e87e-5d55-45ca-bb0f-31c126f97002
               stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
             dataType: NUMBER(38,0)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: PS_PARTKEY
             nullable: false
             sourceColumnReferences:
@@ -32,8 +112,6 @@ steps:
               stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
             dataType: NUMBER(38,0)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: PS_SUPPKEY
             nullable: false
             sourceColumnReferences:
@@ -46,8 +124,6 @@ steps:
               stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
             dataType: NUMBER(38,0)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: PS_AVAILQTY
             nullable: false
             sourceColumnReferences:
@@ -60,8 +136,6 @@ steps:
               stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
             dataType: NUMBER(12,2)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: PS_SUPPLYCOST
             nullable: false
             sourceColumnReferences:
@@ -74,8 +148,6 @@ steps:
               stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
             dataType: VARCHAR(199)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: PS_COMMENT
             nullable: true
             sourceColumnReferences:
@@ -94,7 +166,6 @@ steps:
             dataType: TIMESTAMP
             defaultValue: ""
             description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
-            hashColumns: []
             is_system_ldts: true
             name: LDTS
             nullable: true
@@ -112,7 +183,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: The Record Source (RSRC) describes the source of this data.
-            hashColumns: []
             is_system_rsrc: true
             name: RSRC
             nullable: true
