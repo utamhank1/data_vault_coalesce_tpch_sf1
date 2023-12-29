@@ -1,5 +1,5 @@
 steps:
-  LINK_PARTSUPP_SUPPLIER-ead7e182-9652-4316-98e1-73f92a04ec3a:
+  LINK_PARTSUPP-73206b0d-1c54-4dd6-b7d1-28badc224d5e:
     operation:
       config:
         disable_hwm: true
@@ -16,78 +16,52 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: d977b346-fddb-4cd6-877e-dbfdea39af5d
-              stepCounter: ead7e182-9652-4316-98e1-73f92a04ec3a
-            dataType: NUMBER(38,0)
+              columnCounter: aed003bd-72b6-4f97-9239-3ea4a77d7561
+              stepCounter: 73206b0d-1c54-4dd6-b7d1-28badc224d5e
+            dataType: STRING
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_PARTKEY
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 49a7e87e-5d55-45ca-bb0f-31c126f97002
-                    stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
-                transform: ""
-          - columnReference:
-              columnCounter: 35ab85b4-7f94-468a-a810-e0de19883af5
-              stepCounter: ead7e182-9652-4316-98e1-73f92a04ec3a
-            dataType: NUMBER(38,0)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: PS_SUPPKEY
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 8fea0e9d-6ced-46ae-87cd-12b3f214d0b2
-                    stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
-                transform: ""
-          - columnReference:
-              columnCounter: 96f39917-b516-4b44-84f3-06f7e424f019
-              stepCounter: ead7e182-9652-4316-98e1-73f92a04ec3a
-            dataType: NUMBER(38,0)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: PS_AVAILQTY
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 72ca140b-e61c-4aec-a5a3-71166b0fdf41
-                    stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
-                transform: ""
-          - columnReference:
-              columnCounter: 95e83d1b-f840-462b-b298-83ea8114c11b
-              stepCounter: ead7e182-9652-4316-98e1-73f92a04ec3a
-            dataType: NUMBER(12,2)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: PS_SUPPLYCOST
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 9c291f99-2460-4ecb-9360-f458af342366
-                    stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
-                transform: ""
-          - columnReference:
-              columnCounter: 63761fa1-e887-43a9-86f6-a62f1f4a302e
-              stepCounter: ead7e182-9652-4316-98e1-73f92a04ec3a
-            dataType: VARCHAR(199)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: PS_COMMENT
+            name: HK_PARTKEY_H
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d25f0a78-9aa1-4ba8-9db4-e440a492e606
+                  - columnCounter: ad7463bf-a1b6-4db2-b4d3-c2902ad03096
                     stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
                 transform: ""
           - columnReference:
-              columnCounter: 93a6b104-f9ff-44d8-9283-6d8c80619369
-              stepCounter: ead7e182-9652-4316-98e1-73f92a04ec3a
+              columnCounter: c5bc0290-9ffe-4c86-8276-b5b254dec0af
+              stepCounter: 73206b0d-1c54-4dd6-b7d1-28badc224d5e
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_SUPPKEY_H
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1a7a7003-8d8c-4fff-8354-3a662138c1e6
+                    stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+                transform: ""
+          - columnReference:
+              columnCounter: 61a62694-bba5-443d-aedf-e9076491c25d
+              stepCounter: 73206b0d-1c54-4dd6-b7d1-28badc224d5e
+            config:
+              is_Link_hk: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HK_PARTSUPP_SUPPLIER_L
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f6613d5c-85ef-4d34-8fd6-d375b10c0958
+                    stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+                transform: ""
+          - columnReference:
+              columnCounter: 0a6252c6-b257-41ea-861b-f32d855ac5c3
+              stepCounter: 73206b0d-1c54-4dd6-b7d1-28badc224d5e
             dataType: TIMESTAMP
             description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
             hashColumns: []
@@ -100,8 +74,8 @@ steps:
                     stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
                 transform: ""
           - columnReference:
-              columnCounter: 380dfa90-3830-4847-8000-79a6ddae41cf
-              stepCounter: ead7e182-9652-4316-98e1-73f92a04ec3a
+              columnCounter: 879f160f-7054-400d-9de7-52339b653626
+              stepCounter: 73206b0d-1c54-4dd6-b7d1-28badc224d5e
             dataType: STRING
             description: The Record Source (RSRC) describes the source of this data.
             hashColumns: []
@@ -124,11 +98,11 @@ steps:
                 nodeName: DVSTG_PARTSUPP
             join:
               joinCondition: FROM {{ ref('WORK', 'DVSTG_PARTSUPP') }} "DVSTG_PARTSUPP"
-            name: LINK_PARTSUPP_SUPPLIER
+            name: LINK_PARTSUPP
             noLinkRefs: []
-      name: LINK_PARTSUPP_SUPPLIER
+      name: LINK_PARTSUPP
       overrideSQL: false
       schema: ""
       sqlType: "7"
       type: sql
-    stepCounter: ead7e182-9652-4316-98e1-73f92a04ec3a
+    stepCounter: 73206b0d-1c54-4dd6-b7d1-28badc224d5e
