@@ -43,7 +43,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
@@ -65,13 +64,33 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
               - columnCounter: f5933d5c-d08f-47e7-ac9f-8fff88d0ee2c
                 stepCounter: a673f4c4-afe6-4d73-a34e-201d0959ffcb
             name: HK_REGION_H
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 57577b34-a4c2-43c3-8a1f-bf954e968138
+              stepCounter: a673f4c4-afe6-4d73-a34e-201d0959ffcb
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 7b3b7749-2aa4-480e-8809-56e0ff959404
+                stepCounter: a673f4c4-afe6-4d73-a34e-201d0959ffcb
+              - columnCounter: 179b8ca1-9bcf-4217-a26e-5a56009b6fc3
+                stepCounter: a673f4c4-afe6-4d73-a34e-201d0959ffcb
+            name: HK_NATION_N_S
             nullable: true
             sourceColumnReferences: []
           - columnReference:
