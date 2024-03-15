@@ -175,17 +175,72 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: "{{record_source()}}"
+          - columnReference:
+              columnCounter: 3ec4d3cf-58aa-4036-8fb9-fd3405d8874e
+              stepCounter: aff31de5-ee32-47b6-8e4c-738376aad20a
+            dataType: VARCHAR(15)
+            description: ""
+            name: O_ORDERPRIORITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e8fafd36-6522-444b-80d4-01687e12806b
+                    stepCounter: 33a50ba9-f512-4beb-9aac-815d9de21ee5
+                transform: ""
+          - columnReference:
+              columnCounter: ab4cec62-55fc-492c-abf1-dc9f51e4dfcf
+              stepCounter: aff31de5-ee32-47b6-8e4c-738376aad20a
+            dataType: VARCHAR(15)
+            description: ""
+            name: O_CLERK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5bbd9750-1a79-4f5f-af1e-9e9f652a982c
+                    stepCounter: 33a50ba9-f512-4beb-9aac-815d9de21ee5
+                transform: ""
+          - columnReference:
+              columnCounter: ef71e75e-8096-400c-961a-68eff70fb7b8
+              stepCounter: aff31de5-ee32-47b6-8e4c-738376aad20a
+            dataType: NUMBER(12,2)
+            description: ""
+            name: L_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 183ac2a0-3a94-4ea5-9dce-29ab484ce405
+                    stepCounter: 33a50ba9-f512-4beb-9aac-815d9de21ee5
+                transform: ""
+          - columnReference:
+              columnCounter: 067d2f02-a1b8-4b44-9524-04f0533b77ec
+              stepCounter: aff31de5-ee32-47b6-8e4c-738376aad20a
+            dataType: VARCHAR(44)
+            description: ""
+            name: L_COMMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6131d93f-f2cd-49ac-841d-26ad95cdacb8
+                    stepCounter: 33a50ba9-f512-4beb-9aac-815d9de21ee5
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases: {}
+          - aliases:
+              DVSTG_ORDERS_LINEITEM: 33a50ba9-f512-4beb-9aac-815d9de21ee5
+              PART: 2df1645b-d240-490f-860d-b21ed25d7d8f
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
                 nodeName: PART
+              - locationName: WORK
+                nodeName: DVSTG_ORDERS_LINEITEM
             join:
-              joinCondition: FROM {{ ref('SRC', 'PART') }} "PART"
+              joinCondition: |-
+                FROM {{ ref('SRC', 'PART') }} "PART"
+                INNER JOIN {{ ref('WORK', 'DVSTG_ORDERS_LINEITEM') }} "DVSTG_ORDERS_LINEITEM"
+                ON "PART"."P_PARTKEY" = "DVSTG_ORDERS_LINEITEM"."L_PARTKEY"
             name: DVSTG_PART
             noLinkRefs: []
       name: DVSTG_PART

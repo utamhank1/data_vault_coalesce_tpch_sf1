@@ -4742,7 +4742,6 @@ subgraphs:
     id: "2"
     name: Customer_DV
     steps:
-      - 19132bb6-675c-4d9c-9a8a-3c8fe1062c39
       - 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
       - ff18aa02-68bb-4331-8350-207514469acc
       - 89a017d6-7c81-40c6-b952-5cd49bd562db
@@ -4754,7 +4753,6 @@ subgraphs:
     id: "3"
     name: Partsupp_DV
     steps:
-      - 96251b7b-bc55-4dfa-8d5f-d1e24075e00d
       - a9e2faf9-9422-4dc2-b242-65bac3eb16be
       - 73206b0d-1c54-4dd6-b7d1-28badc224d5e
       - 86ab364d-08ed-43c6-99ce-e83ab2a6b9bb
