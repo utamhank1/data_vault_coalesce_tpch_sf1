@@ -1,0 +1,128 @@
+fileVersion: 1
+id: "10"
+isDisabled: false
+metadata:
+  defaultStorageLocation: STG
+  error: null
+  nodeMetadataSpec: |-
+    capitalized: INCREMENTAL
+
+    short: INC
+
+    plural: Incremental
+
+    tagColor: green
+
+     
+
+    config:
+
+    - groupName: Options
+
+      items:
+
+      - type: materializationSelector
+
+        default: view
+
+        options:
+
+        - view
+
+        isRequired: true
+
+        enableIf: "false"
+
+     
+
+      - displayName: Filter data based on Persistent Table
+
+        attributeName: refTable
+
+        type: toggleButton
+
+        default: false
+
+        isRequired: false
+
+     
+
+      - displayName: Persistent Table based on prefix
+
+        attributeName: persistTable
+
+        type: dropdownSelector
+
+        default: ""
+
+        options:
+
+        - ""
+
+        - "DS"
+
+        - "DIM"
+
+        - "FCT"
+
+        - "SAT"
+
+        - "PSTG"
+        
+        - "DVSTG"
+
+        isRequired: false
+
+        enableIf: "{{config.refTable}}"
+
+     
+
+      - displayName: Persistent Table location
+
+        attributeName: persistTableLocation
+
+        type: dropdownSelector
+
+        default: "DWH"
+
+        options:
+
+        - "DV_STG"
+
+        - "DV_RAW"
+
+        - "WORK"
+
+        isRequired: false
+
+        enableIf: "{{config.refTable}}"
+
+     
+
+      - displayName: Persistent Table name if not selected above
+
+        attributeName: persistTableName
+
+        type: textBox
+
+        default: ""
+
+        isRequired: false
+
+        enableIf: "{{config.refTable}}"
+
+    systemColumns:
+    - displayName: "LDTS"
+      transform: SYSDATE()
+      dataType: TIMESTAMP
+      placement: end
+      attributeName: is_system_ldts    
+      description: "The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse."
+    - displayName: "RSRC"
+      transform: "{{record_source()}}"
+      dataType: STRING
+      placement: end
+      attributeName: is_system_rsrc    
+      description: "The Record Source (RSRC) describes the source of this data."  
+name: Inc_Node
+type: NodeType

@@ -1,0 +1,14 @@
+fileVersion: 1
+id: "32"
+name: PARTY
+steps:
+  - 023fc417-4e59-4d50-9024-daf9f80fbe72
+  - 27cb4679-b60b-4a34-bab1-c6b4b9090b53
+  - 556180df-1d64-45ac-b9a3-3df40b2fa157
+  - 6c935978-2933-41a4-bb39-04c0a76234d4
+  - 79f1d458-03e0-48e8-ae6a-d93c5b3a7aea
+  - 89304bb1-edba-4d86-b99d-ee509519097b
+  - ccaec8b3-6ed7-44f9-9ec2-749f8d8c0f46
+  - efa9517a-2b1f-4ee5-93ce-aa41f78bad3b
+  - fb63757e-1f24-4b28-b0ed-fcbee59dcf73
+type: Subgraph

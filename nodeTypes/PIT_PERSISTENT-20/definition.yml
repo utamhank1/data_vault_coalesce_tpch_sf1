@@ -1,0 +1,31 @@
+fileVersion: 1
+id: "20"
+isDisabled: false
+metadata:
+  defaultStorageLocation: RAW_VAULT
+  error: null
+  nodeMetadataSpec: |-
+    capitalized: 'PIT_PERSISTENT'
+    short: 'PIT_PERSISTENT'
+    tagColor: '#C0C0C0'
+    plural: 'DATAVAULT BY SCALEFREE: PITS'
+
+    config:
+    - groupName: Data Vault
+      items:
+      - displayName: Dimension Key Column
+        type: columnSelector
+        attributeName: is_dimension_key
+        isRequired: true
+
+      - displayName: Clean Up PIT
+        type: toggleButton
+        attributeName: cleanup_pit
+        default: true
+
+      - displayName: Enable Tests
+        attributeName: testsEnabled
+        type: toggleButton
+        default: true
+name: PIT_PERSISTENT
+type: NodeType

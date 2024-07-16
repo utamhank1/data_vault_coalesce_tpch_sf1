@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "2"
+mappingDefinitions:
+  RAW_VAULT:
+    database: DEV_EDW_DB
+    schema: DV_RAW
+  STG:
+    database: DEV_EDW_DB
+    schema: DV_STG
+name: Deploy Test
+type: Environment
