@@ -1,7 +1,30 @@
-defaultStorageMapping: WORK
+defaultStorageMapping: RAW_VAULT
 installedPackages: {}
-jobs: {}
-locations: {}
+jobs:
+  Job-8:
+    excludeSelector: ""
+    id: 8
+    includeSelector: "{ subgraph: \"CLAIM\" } OR { subgraph: \"CLAIM_ADJUSTER\" } OR { subgraph: \"CLAIM_PRG_NOTE\" } OR { subgraph: \"CLAIMTYPE_RESTYPE\" } OR { subgraph: \"CLAIM_X_SPCL_CODING_RESPONSES\" } OR { subgraph: \"STATES\" } OR { subgraph: \"SPCL_CODING_FIELDS\" } OR { subgraph: \"RESERVE_HISTORY\" } OR { subgraph: \"EVENT\" } OR { subgraph: \"PARTY\" } OR { subgraph: \"FUNDS\" } OR { subgraph: \"CLIENT_PROGRAM\" } OR { subgraph: \"CODES\" } OR { subgraph: \"CODES_TEXT\" } OR { subgraph: \"INJ_X_ILNS_X_BP\" } OR { subgraph: \"ORG_HIERARCHY\" } OR { subgraph: \"PERSON_INVOLVED\" } OR { subgraph: \"PI_SUPP\" } OR { subgraph: \"PI_X_WORK_LOSS\" } OR { subgraph: \"CLAIMANT\" } OR { location: RAW_VAULT name: HUB_CLAIM_PRG_NOTE } OR { location: RAW_VAULT name: LINK_CLAIM_PRG_NOTE } OR { location: RAW_VAULT name: SAT_CLAIM_PRG_NOTE } OR { location: RAW_VAULT name: SAT_CLAIM_PRG_NOTE_VW } OR { location: RAW_VAULT name: INC_CLAIM_PRG_NOTE } OR { location: STG name: CLAIM_PRG_NOTE } OR { location: RAW_VAULT name: STG_CLAIM_PRG_NOTE } OR { location: RAW_VAULT name: HUB_CLAIM } OR { location: RAW_VAULT name: SAT_CLAIM_X_SPCL_CODING_RESPONSES } OR { location: RAW_VAULT name: INC_CLAIM } OR { location: RAW_VAULT name: INC_CLAIM_X_SPCL_CODING_RESPONSES } OR { location: STG name: CLAIM } OR { location: STG name: CLAIM_X_SPCL_CODING_RESPONSES } OR { location: RAW_VAULT name: STG_CLAIM } OR { location: RAW_VAULT name: STG_CLAIM_CLAIM_X_SPCL_CODING_RESPONSES } OR { location: RAW_VAULT name: HUB_CLAIM } OR { location: RAW_VAULT name: LINK_CLAIMANT_CLAIM_PARTY } OR { location: RAW_VAULT name: INC_CLAIMANT } OR { location: STG name: CLAIMANT } OR { location: RAW_VAULT name: STG_CLAIMANT } OR { location: RAW_VAULT name: HUB_CLAIMTYPE_RESTYPE } OR { location: RAW_VAULT name: SAT_CLAIMTYPE_RESTYPE } OR { location: RAW_VAULT name: SAT_CLAIMTYPE_RESTYPE_VW } OR { location: RAW_VAULT name: INC_CLAIMTYPE_RESTYPE } OR { location: STG name: CLAIMTYPE_RESTYPE } OR { location: RAW_VAULT name: STG_CLAIMTYPE_RESTYPE } OR { location: RAW_VAULT name: HUB_CLIENT_PRGM } OR { location: RAW_VAULT name: SAT_CLIENT_PRGM } OR { location: RAW_VAULT name: SAT_CLIENT_PRGM_VW } OR { location: RAW_VAULT name: INC_CLIENT_PRGM } OR { location: STG name: CLIENT_PROGRAM } OR { location: RAW_VAULT name: STG_CLIENT_PRGM } OR { location: RAW_VAULT name: HUB_CODES } OR { location: RAW_VAULT name: SAT_REF_CODES } OR { location: RAW_VAULT name: SAT_REF_CODES_VW } OR { location: RAW_VAULT name: INC_CODES } OR { location: STG name: CODES } OR { location: RAW_VAULT name: STG_CODES } OR { location: RAW_VAULT name: HUB_REF_CODES_TEXT } OR { location: RAW_VAULT name: SAT_REF_CODES_TEXT } OR { location: RAW_VAULT name: SAT_REF_CODES_TEXT_VW } OR { location: RAW_VAULT name: INC_REF_CODES_TEXT } OR { location: STG name: CODES_TEXT } OR { location: RAW_VAULT name: STG_REF_CODES_TEXT } OR { location: RAW_VAULT name: HUB_EVENT } OR { location: RAW_VAULT name: LINK_EVENT_CLIENT_PROGRAM } OR { location: RAW_VAULT name: SAT_EVENT } OR { location: RAW_VAULT name: SAT_EVENT_LOC } OR { location: RAW_VAULT name: SAT_EVENT_LOC_VW } OR { location: RAW_VAULT name: SAT_EVENT_VW } OR { location: RAW_VAULT name: INC_CLAIMANT } OR { location: RAW_VAULT name: INC_EVENT_LOC_SAT } OR { location: RAW_VAULT name: INC_EVENT_SAT } OR { location: STG name: EVENT } OR { location: RAW_VAULT name: STG_EVENT } OR { location: RAW_VAULT name: STG_EVENT_LOC } OR { location: RAW_VAULT name: HUB_FUNDS } OR { location: RAW_VAULT name: LINK_FUNDS_CLAIMS_ACCOUNT } OR { location: RAW_VAULT name: SAT_FUNDS } OR { location: RAW_VAULT name: SAT_FUNDS_VW } OR { location: RAW_VAULT name: INC_FUNDS } OR { location: STG name: FUNDS } OR { location: RAW_VAULT name: STG_FUNDS } OR { location: RAW_VAULT name: SAT_INJ_X_ILNS_X_BP } OR { location: RAW_VAULT name: SAT_INJ_X_ILNS_X_BP_VW } OR { location: RAW_VAULT name: INC_INJ_X_ILNS_X_BP } OR { location: STG name: INJ_X_ILNS_X_BP } OR { location: RAW_VAULT name: STG_INJ_X_ILNS_X_BP } OR { location: RAW_VAULT name: LINK_ORG_HIERARCHY } OR { location: RAW_VAULT name: INC_ORG_HIERARCHY } OR { location: STG name: ORG_HIERARCHY } OR { location: RAW_VAULT name: STG_ORG_HIERARCHY } OR { location: RAW_VAULT name: HUB_PARTY } OR { location: RAW_VAULT name: SAT_PARTY_PDETAIL } OR { location: RAW_VAULT name: SAT_PARTY_PDETAIL_VW } OR { location: RAW_VAULT name: INC_PARTY } OR { location: STG name: ENTITY } OR { location: RAW_VAULT name: STG_PARTY } OR { location: RAW_VAULT name: HUB_PARTY } OR { location: RAW_VAULT name: SAT_PERSON_INVOLVED } OR { location: RAW_VAULT name: SAT_PERSON_INVOLVED_VW } OR { location: RAW_VAULT name: INC_PERSON_INVOLVED } OR { location: STG name: PERSON_INVOLVED } OR { location: RAW_VAULT name: STG_PERSON_INVOLVED } OR { location: RAW_VAULT name: SAT_PERSON_INVOLVED } OR { location: RAW_VAULT name: SAT_PI_SUPP } OR { location: RAW_VAULT name: SAT_PI_SUPP_VW } OR { location: RAW_VAULT name: INC_PI_SUPP } OR { location: STG name: PI_SUPP } OR { location: RAW_VAULT name: STG_PI_SUPP } OR { location: RAW_VAULT name: HUB_PARTY } OR { location: RAW_VAULT name: SAT_PERSON_INVOLVED } OR { location: RAW_VAULT name: SAT_PI_X_WORK_LOSS } OR { location: RAW_VAULT name: SAT_PI_X_WORK_LOSS_VW } OR { location: RAW_VAULT name: INC_PI_X_WORK_LOSS } OR { location: STG name: PI_X_WORK_LOSS } OR { location: RAW_VAULT name: STG_PI_X_WORK_LOSS } OR { location: RAW_VAULT name: LINK_RESERVE_HISTORY_CLAIM } OR { location: RAW_VAULT name: SAT_RESERVE_HIST } OR { location: RAW_VAULT name: SAT_RESERVE_HIST_VW } OR { location: RAW_VAULT name: INC_RESERVE_HISTORY } OR { location: STG name: RESERVE_HISTORY } OR { location: RAW_VAULT name: STG_RESERVE_HISTORY } OR { location: RAW_VAULT name: HUB_SPCL_CODING_FIELDS } OR { location: RAW_VAULT name: SAT_SPCL_CODING_FIELDS } OR { location: RAW_VAULT name: SAT_SPCL_CODING_FIELDS_VW } OR { location: RAW_VAULT name: INC_SPCL_CODING_FIELDS } OR { location: STG name: SPCL_CODING_FIELDS } OR { location: RAW_VAULT name: STG_SPCL_CODING_FIELDS } OR { location: RAW_VAULT name: HUB_STATES } OR { location: RAW_VAULT name: SAT_STATES } OR { location: RAW_VAULT name: SAT_STATES_VW } OR { location: RAW_VAULT name: INC_STATES } OR { location: STG name: STATES } OR { location: RAW_VAULT name: STG_STATES }"
+    name: Job_Raw_Vault
+    steps: []
+    subgraphs: []
+locations:
+  RAW_VAULT:
+    mappingDefinitions:
+      "13":
+        database: QA_EDW_DB
+        schema: DV_RAW
+      "2":
+        database: DEV_EDW_DB
+        schema: DV_RAW
+  STG:
+    mappingDefinitions:
+      "13":
+        database: QA_EDW_DB
+        schema: DV_STG
+      "2":
+        database: DEV_EDW_DB
+        schema: DV_STG
 macros:
   Macro-1:
     id: "1"
@@ -553,11 +576,235 @@ macros:
 packages: {}
 projects: {}
 stepTypes:
+  StepType-10:
+    id: "10"
+    isDisabled: false
+    metadata:
+      defaultStorageLocation: STG
+      error: null
+      nodeMetadataSpec: |-
+        capitalized: INCREMENTAL
+
+        short: INC
+
+        plural: Incremental
+
+        tagColor: green
+
+         
+
+        config:
+
+        - groupName: Options
+
+          items:
+
+          - type: materializationSelector
+
+            default: view
+
+            options:
+
+            - view
+
+            isRequired: true
+
+            enableIf: "false"
+
+         
+
+          - displayName: Filter data based on Persistent Table
+
+            attributeName: refTable
+
+            type: toggleButton
+
+            default: false
+
+            isRequired: false
+
+         
+
+          - displayName: Persistent Table based on prefix
+
+            attributeName: persistTable
+
+            type: dropdownSelector
+
+            default: ""
+
+            options:
+
+            - ""
+
+            - "DS"
+
+            - "DIM"
+
+            - "FCT"
+
+            - "SAT"
+
+            - "PSTG"
+            
+            - "DVSTG"
+
+            isRequired: false
+
+            enableIf: "{{config.refTable}}"
+
+         
+
+          - displayName: Persistent Table location
+
+            attributeName: persistTableLocation
+
+            type: dropdownSelector
+
+            default: "DWH"
+
+            options:
+
+            - "DV_STG"
+
+            - "DV_RAW"
+
+            - "WORK"
+
+            isRequired: false
+
+            enableIf: "{{config.refTable}}"
+
+         
+
+          - displayName: Persistent Table name if not selected above
+
+            attributeName: persistTableName
+
+            type: textBox
+
+            default: ""
+
+            isRequired: false
+
+            enableIf: "{{config.refTable}}"
+
+        systemColumns:
+        - displayName: "LDTS"
+          transform: SYSDATE()
+          dataType: TIMESTAMP
+          placement: end
+          attributeName: is_system_ldts    
+          description: "The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse."
+        - displayName: "RSRC"
+          transform: "{{record_source()}}"
+          dataType: STRING
+          placement: end
+          attributeName: is_system_rsrc    
+          description: "The Record Source (RSRC) describes the source of this data."  
+      templates:
+        create:
+          templateString: |-
+            {% set base = node.name | replace("INC", "") %}
+
+            {% if config.persistTableName | length > 0 %}
+
+                {% set persist = config.persistTableName %}
+
+            {% else %}
+
+                {% set persist = config.persistTable + base %}
+
+            {% endif %}
+
+            {% set source = sources[0] %}
+
+             
+
+            {{ stage('Create Stage View') }}
+
+             
+
+            CREATE OR REPLACE VIEW {{ ref_no_link(node.location.name, node.name) }}
+
+            (
+
+                {% for col in columns if col.name != "_SEQUENCE" %}
+
+                    "{{ col.name }}"
+
+                    {%- if col.description | length > 0 %} COMMENT '{{ col.description | escape }}'{% endif %}
+
+                    {% if not loop.last %}, {% endif %}
+
+                {% endfor %}
+
+            )
+
+            {%- if node.description | length > 0 %} COMMENT = '{{ node.description | escape }}'{% endif %}
+
+            AS
+
+            SELECT
+
+            {% for col in source.columns  %}
+
+                {{ get_source_transform(col) }} AS  "{{ col.name }}"
+
+                {%- if not loop.last -%}, {% endif %}
+
+            {% endfor %}
+
+             
+
+            {{ source.join }}
+
+             
+
+            {% if config.refTable and persist | length > 0  %}
+
+                {% if "WHERE" in source.join | upper %}
+
+                    AND
+
+                {% else %}
+
+                    WHERE
+
+                {% endif %}
+
+                LDTS > (SELECT NVL(MAX(LDTS), '1900-01-01')
+
+                                    FROM {{config.persistTableLocation}}.{{config.persistTableName}} )
+
+            {% endif %}
+        run:
+          templateString: ""
+    name: Inc_Node
+    version: 1
+  StepType-11:
+    id: "11"
+    isDisabled: false
+    metadata:
+      defaultStorageLocation: null
+      error: null
+      nodeMetadataSpec: |-
+        capitalized: New Type
+        short: NEW
+        tagColor: gray
+        plural: New Types
+      templates:
+        create:
+          templateString: ""
+        run:
+          templateString: ""
+    name: New Type
+    version: 1
   StepType-12:
     id: "12"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: PIT'
@@ -750,7 +997,7 @@ stepTypes:
     id: "13"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: SNAPSHOT V0'
@@ -980,6 +1227,495 @@ stepTypes:
     id: "14"
     isDisabled: false
     metadata:
+      defaultStorageLocation: STG
+      error: null
+      nodeMetadataSpec: |-
+        capitalized: Dyanmic Table Work
+        short: DT_WRK
+        tagColor: "#F6FF3C"
+        isDisabled: true
+        plural: Dynamic Tables
+
+        deployStrategy: advanced
+
+        config:
+          - groupName: Dynamic Table Options
+            items: 
+            - displayName: Warehouse on which to execute Dynamic Table
+              attributeName: warehouseName
+              type: textBox
+              default: 'coalesce_dev_warehouse'
+              isRequired: true
+
+            - type: toggleButton
+              attributeName: downstreamOption
+              displayName: Downstream
+              default: false
+              isRequired: true
+
+            - type: tabular
+              displayName: 'Lag Specification'
+              attributeName: lagSpecification
+              columns:
+          
+              -  type: textBox
+                 displayName: Time Value
+                 attributeName: lagValue
+                 default: 60
+                 isRequired: false
+                 enableIf: "{% if config.downstreamOption %} false {% else %} true {% endif %}"
+            
+              -  type: dropdownSelector
+                 displayName: Time Period
+                 attributeName: lagPeriod
+                 default: "Minutes"
+                 options:
+                 - Seconds
+                 - Minutes
+                 - Hours
+                 - Days
+                 isRequired: false
+                 enableIf: "{% if config.downstreamOption %} false {% else %} true {% endif %}"
+            
+              isRequired: false
+              enableIf: "{% if config.downstreamOption %} false {% else %} true {% endif %}"
+
+            - type: dropdownSelector
+              displayName: Refresh Mode
+              attributeName: refresh_mode
+              default: "AUTO"
+              options:
+              - AUTO
+              - INCREMENTAL
+              - FULL
+              isRequired: true
+
+            - type: dropdownSelector   
+              displayName: Initialize
+              attributeName: initialize
+              default: "ON_CREATE"
+              options:
+              - ON_CREATE
+              - ON_SCHEDULE 
+              isRequired: true
+
+          - groupName: General Options
+            items: 
+            - type: toggleButton
+              attributeName: selectDistinct
+              displayName: Distinct
+              default: false
+              enableIf: "{% if config.groupByAll %} false {% else %} true {% endif %}"
+
+            - type: toggleButton
+              attributeName: groupByAll
+              displayName: Group By All
+              default: false
+              enableIf: "{% if config.selectDistinct %} false {% else %} true {% endif %}"
+
+            - type: multisourceToggle
+
+            - displayName: Multi Source Strategy
+              attributeName: insertStrategy
+              type: dropdownSelector
+              default: UNION ALL
+              options:
+              - "UNION"
+              - "UNION ALL" 
+              isRequired: true
+              enableIf: "{% if node.isMultisource %} true {% else %} false {% endif %}"
+
+          - groupName: Hidden Config
+            enableIf: "false"
+            items:
+            - displayName: Type
+              type: materializationSelector
+              default: Dynamic Table
+              options:
+              - Dynamic Table
+              isRequired: false
+      templates:
+        create:
+          templateString: |
+            {#
+                Copyright (c) 2023 Coalesce. All rights reserved.
+            This script and its associated documentation are confidential and proprietary to Coalesce.
+            Unauthorized reproduction, distribution, or disclosure of this material is strictly prohibited.
+            Coalesce permits you to copy and modify this script for the purposes of using with Coalsce but
+            does not permit copying or modification for any other purpose.  
+            #}
+            {# == Node Type Version        : 1  == #}
+            {# == Node Type Name           : Dynamic Table Stage  == #}
+            {# == Node Type Description    : This node creates and runs dynamic table stage  == #}
+
+
+            {% if desiredState == currentState %}
+
+            {{ stage('Nothing to do.') }}
+            select 1 = 0
+
+            {% elif desiredState %}
+                ## Identify all config changes that would cause a CREATE instead of ALTER
+                {% if currentState != undefined %} 
+                    ## General metadata
+                    {% set columnsTest = currentState.columns == desiredState.columns %}
+                    {% set sourcesTest = currentState.sources | count == desiredState.sources | count %}
+                    {% set joinTest = currentState.join == desiredState.join %}
+
+                    {# Test to see if the transform in a column has changed #}
+                    {# Desired Namespace Variables Transform #}
+                    {% set desiredTransformArray = desiredState.sources | map(attribute='columns') | first | map(attribute='transform') | list -%}
+
+                    {# Test to see if the transform in a column has changed #}
+                    {# Current Namespace Variables Transform #}
+                    {% set currentTransformArray = currentState.sources | map(attribute='columns') | first | map(attribute='transform') | list -%}
+
+                    {% set columnsTransformTest = currentTransformArray == desiredTransformArray %}
+
+                    ## Storage Location Tests
+                    ## Only need to account for updated Storage Location mappings 
+                    ## sourceTest handles changed Storage Location Names
+                    ## Current Namespace Variables
+                    {% set nsVariables = namespace(nsCurrentDepStorageLocations="") %}
+                    {% set nsVariables = namespace(nsCurrentSourceStorageLocations="") %}
+                    {% set nsVariables = namespace(nsCurrentTargetStorageLocations="") %}
+                    {% set nsVariables = namespace(nsCurrentUsedStorageLocations="") %}
+
+                    ## Current State Storage Location Info
+                    {% for source in currentState.sources %}
+                        {% for dep in source.dependencies %}
+                            {% set depSourceLocation = dep.node.location.name %}
+                            {% if loop.first %}
+                                {% set nsVariables.nsCurrentDepStorageLocations = depSourceLocation %}
+                            {% else %}
+                                {% set nsVariables.nsCurrentDepStorageLocations = nsVariables.nsCurrentDepStorageLocations + ',' + depSourceLocation %}
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% if loop.first %}
+                            {% set nsVariables.nsCurrentSourceStorageLocations = nsVariables.nsCurrentDepStorageLocations %}
+                        {% else %}
+                            {% set nsVariables.nsCurrentSourceStorageLocations = nsVariables.nsCurrentSourceStorageLocations + ',' + nsVariables.nsCurrentDepStorageLocations %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {% set nsVariables.nsCurrentTargetStorageLocations = currentState.node.location.name  %}
+
+                    {% set nsVariables.nsCurrentUsedStorageLocations = nsVariables.nsCurrentSourceStorageLocations + ',' + nsVariables.nsCurrentTargetStorageLocations %}
+
+                    {% set currentStorageLocations = (nsVariables.nsCurrentUsedStorageLocations).split(',') | list %}
+                    {% set currentUniqueStorageLocations = currentStorageLocations | unique | sort | list %}
+
+                    ## Desired Namespace Variables
+                    {% set nsVariables = namespace(nsDesiredDepStorageLocations="") %}
+                    {% set nsVariables = namespace(nsDesiredSourceStorageLocations="") %}
+                    {% set nsVariables = namespace(nsDesiredTargetStorageLocations="") %}
+                    {% set nsVariables = namespace(nsDesiredUsedStorageLocations="") %}
+
+                    {% set nsVariables = namespace(storageLocationTest="") %}
+
+                    ## Desired State Storage Location Info
+                    {% for source in desiredState.sources %}
+                        {% for dep in source.dependencies %}
+                            {% set depSourceLocation = dep.node.location.name %}
+                            {% if loop.first %}
+                                {% set nsVariables.nsDesiredDepStorageLocations = depSourceLocation %}
+                            {% else %}
+                                {% set nsVariables.nnsDesiredDepStorageLocations = nsVariables.nsDesiredDepStorageLocations + ',' + depSourceLocation %}
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% if loop.first %}
+                            {% set nsVariables.nsDesiredSourceStorageLocations = nsVariables.nsDesiredDepStorageLocations %}
+                        {% else %}
+                            {% set nsVariables.nsDesiredSourceStorageLocations = nsVariables.nsDesiredSourceStorageLocations + ',' + nsVariables.nsDesiredDepStorageLocations %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {% set nsVariables.nsDesiredTargetStorageLocations = desiredState.node.location.name  %}
+
+                    {% set nsVariables.nsDesiredUsedStorageLocations = nsVariables.nsDesiredSourceStorageLocations + ',' + nsVariables.nsDesiredTargetStorageLocations %}
+
+                    {% set desiredStorageLocations = (nsVariables.nsDesiredUsedStorageLocations).split(',') | list %}
+                    {% set desiredUniqueStorageLocations = desiredStorageLocations | unique | sort | list %}
+
+                    ## Storage Location Tests
+                    ## Only need to account for updated Storage Location mappings
+                    ## sourceTest handles changed Storage Location Names
+                    {% set nsVariables.storageLocationTest = true %}
+                    {% for name in desiredUniqueStorageLocations if nsVariables.storageLocationTest == true %}
+                        ## Current mappings
+                        {% set currentDatabase = currentState.storageLocations | selectattr('name', 'equalto', name) | map(attribute='database') | first %}
+                        {% set currentSchema = currentState.storageLocations | selectattr('name', 'equalto', name) | map(attribute='schema') | first %}
+                        {% set currentDatabaseSchema = currentDatabase + '.' + currentSchema %}
+                        
+                        ## Desired mappings
+                        {% set desiredDatabase = desiredState.storageLocations | selectattr('name', 'equalto', name) | map(attribute='database') | first %}
+                        {% set desiredSchema = desiredState.storageLocations | selectattr('name', 'equalto', name) | map(attribute='schema') | first %}
+                        {% set desiredDatabaseSchema = desiredDatabase + '.' + desiredSchema %}
+
+                        {% if currentDatabaseSchema != desiredDatabaseSchema %}
+                            {% set nsVariables.storageLocationTest = false %}
+                        {% endif %}
+                    {% endfor %}
+
+                    ## Config
+                    {% set insertStrategyTest = currentState.config.insertStrategy == desiredState.config.insertStrategy %}
+                    {% set groupByAllTest = currentState.config.groupByAll == desiredState.config.groupByAll %}
+                    {% set selectDistinctTest = currentState.config.selectDistinct == desiredState.config.selectDistinct %}
+
+                    ## Node
+                    {% set nodeNameTest = currentState.node.name == desiredState.node.name %}
+                    {% set nodeMaterializationType = currentState.node.materializationType == desiredState.node.materializationType %}
+                    {% set nodeIsMultisource = currentState.node.isMultisource == desiredState.node.isMultisource %}
+
+                    ## Refresh_mode test
+                    {% set refreshTest = currentState.config.refresh_mode == desiredState.config.refresh_mode %}
+
+                    ## Initialize test
+                    {% set initializeTest = currentState.config.initialize == desiredState.config.initialize %}
+
+
+                    ## If any of the above are false then a CREATE must be run
+                    {% if 
+                        columnsTest == false or
+                        sourcesTest == false or
+                        joinTest == false or
+                        columnsTransformTest == false or
+                        nsVariables.storageLocationTest == false or
+                        insertStrategyTest == false or 
+                        groupByAllTest == false or 
+                        selectDistinctTest == false or 
+                        nodeNameTest == false or 
+                        nodeMaterializationType == false or 
+                        nodeIsMultisource == false or 
+                        initializeTest == false or
+                        refreshTest == false %}    
+
+                        {% set createTest = true %}
+                    {% else %}
+                        {% set createTest = false %}
+                    {% endif %}
+                {% endif %}
+                
+                ## Identify config changes that would only result in ALTER
+                {% if createTest == false %}
+                    {% if desiredState.parameters.targetDynamicTableWarehouse == desiredState.config.warehouseName %}
+                        {% set warehouseTest = currentState.config.warehouseName == desiredState.config.warehouseName %}
+                    {% else %}
+                        {% set warehouseTest = currentState.parameters.targetDynamicTableWarehouse == desiredState.parameters.targetDynamicTableWarehouse %}
+                    {% endif %}
+                    {% set lagSpecificationTest = currentState.config.lagSpecification == desiredState.config.lagSpecification %}
+                    {% set downstreamOptionTest = currentState.config.downstreamOption == desiredState.config.downstreamOption %}
+                    {% set nodeCommentTest = currentState.node.description == desiredState.node.description %}
+
+                    {% if 
+                        warehouseTest == false or
+                        lagSpecificationTest == false or
+                        downstreamOptionTest == false or
+                        nodeCommentTest == false %}    
+
+                        {% set alterOnlyTest = true %}
+                    {% else %}
+                        {% set alterOnlyTest = false %}
+                    {% endif %}
+                {% endif %}
+
+
+                ## CREATE or ALTER
+                {% if (currentState == undefined) or (createTest == true) %}
+
+                    ## Dynamic Table Name
+                    {% set targetDynamicTableDatabase = ref_no_link(desiredState.node.location.name, desiredState.node.name).split('.')[0] %} 
+                    {% set targetDynamicTableSchema = ref_no_link(desiredState.node.location.name, desiredState.node.name).split('.')[1] %} 
+                    {% set fullyQualifiedTargetDynamicTableName = ref_no_link(desiredState.node.location.name, desiredState.node.name) %}
+
+                    ## Warehouse
+                    ## Can be updated during deployment via a parameter to account for different warehouse names in different deployments
+                    {% if desiredState.parameters.targetDynamicTableWarehouse == desiredState.config.warehouseName %}
+                        {% set dynamicTableWarehouse = desiredState.config.warehouseName %}
+                    {% else %}
+                        {% set dynamicTableWarehouse = desiredState.parameters.targetDynamicTableWarehouse %}
+                    {% endif %}
+
+                    ## Downstream Option or Lag Specification
+                    {% if desiredState.config.downstreamOption == true %}
+                        {% set dynamicTableLagSpecification = 'DOWNSTREAM' %}
+                    {% else %}
+                        {% set dynamicTableLagValue = desiredState.config.lagSpecification.get('items') | map(attribute='lagValue') | first %}
+                        {% set dynamicTableLagValuePeriod = desiredState.config.lagSpecification.get('items') | map(attribute='lagPeriod') | first %}
+
+                        {% set dynamicTableLagSpecification = dynamicTableLagValue ~ ' ' ~ dynamicTableLagValuePeriod %}
+                    {% endif %}
+
+                    ## Refresh-type option
+                    {% set dynamicTablerefresh = desiredState.config.refresh_mode %}
+
+                    ##Initialize option
+                    {% set dynamicTableinitialize = desiredState.config.initialize %}
+
+                    ## Node description
+                    {%- if desiredState.node.description | length > 0 %} 
+                        {% set dynamicTableComment = "COMMENT = " + "'" + desiredState.node.description + "'" %}
+                    {% endif %}
+
+                    {{ stage('Create Dynamic Work Table', true, "sql", "create") }}
+                    CREATE OR REPLACE DYNAMIC TABLE {{ fullyQualifiedTargetDynamicTableName }}
+                        TARGET_LAG = '{{ dynamicTableLagSpecification }}'
+                        WAREHOUSE = {{dynamicTableWarehouse}}
+                        REFRESH_MODE   = {{dynamicTablerefresh}}
+                        INITIALIZE = {{dynamicTableinitialize}}
+                        {{ dynamicTableComment }}
+                    (
+                        {% for col in desiredState.columns %}
+                            "{{ col.name }}"
+                            {%- if col.description | length > 0 %} COMMENT '{{ col.description | escape }}'{% endif %}
+                            {%- if not loop.last -%}, {% endif %}
+                        {% endfor %}
+                    )
+                    AS
+                    {% for source in desiredState.sources %}
+                        SELECT {% if desiredState.config.selectDistinct %} DISTINCT {% endif %}
+                        {% for col in source.columns %}
+                            {{ get_source_transform(col) }} AS "{{ col.name }}"
+                            {%- if not loop.last -%}, {% endif %}
+                        {% endfor %}
+
+                        {{ source.join }}
+
+                        {% if not loop.last %}
+                            {% if desiredState.config.insertStrategy in ['UNION', 'UNION ALL'] %}
+                                {{ desiredState.config.insertStrategy }}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if desiredState.config.groupByAll %} GROUP BY ALL {% endif %}
+
+
+
+                {% elif (currentState != undefined) and (alterOnlyTest == true) %}
+
+                    ## Desired Dynamic Table Name
+                    {% set desiredTargetDynamicTableDatabase = ref_no_link(desiredState.node.location.name, desiredState.node.name).split('.')[0] %} 
+                    {% set desiredTargetDynamicTableSchema = ref_no_link(desiredState.node.location.name, desiredState.node.name).split('.')[1] %} 
+                    {% set desiredFullyQualifiedTargetDynamicTableName = ref_no_link(desiredState.node.location.name, desiredState.node.name) %}
+
+                    ## Desired Warehouse
+                    {% if desiredState.parameters.targetDynamicTableWarehouse == desiredState.config.warehouseName %}
+                        {% set desiredDynamicTableWarehouse = desiredState.config.warehouseName %}
+                    {% else %}
+                        {% set desiredDynamicTableWarehouse = desiredState.parameters.targetDynamicTableWarehouse %}
+                    {% endif %}
+
+
+                    ## Desired Downstream Option or Lag Specification
+                    {% if desiredState.config.downstreamOption == true %}
+                        {% set desiredDynamicTableLagSpecification = 'DOWNSTREAM' %}
+                    {% else %}
+                        {% set desiredDynamicTableLagValue = desiredState.config.lagSpecification.get('items') | map(attribute='lagValue') | first %}
+                        {% set desiredDynamicTableLagValuePeriod = desiredState.config.lagSpecification.get('items') | map(attribute='lagPeriod') | first %}
+
+                        {% set desiredDynamicTableLagSpecification = desiredDynamicTableLagValue ~ ' ' ~ desiredDynamicTableLagValuePeriod %}
+                    {% endif %}
+
+
+
+                    ## Current Warehouse
+                    {% set currentDynamicTableWarehouse = currentState.config.warehouseName %}
+
+                    ## Current Downstream Option or Lag Specification
+                    {% if currentState.config.downstreamOption == true %}
+                        {% set currentDynamicTableLagSpecification = 'DOWNSTREAM' %}
+                    {% else %}
+                        {% set currentDynamicTableLagValue = currentState.config.lagSpecification.get('items') | map(attribute='lagValue') | first %}
+                        {% set currentDynamicTableLagValuePeriod = currentState.config.lagSpecification.get('items') | map(attribute='lagPeriod') | first %}
+
+                        {% set currentDynamicTableLagSpecification = currentDynamicTableLagValue ~ ' ' ~ currentDynamicTableLagValuePeriod %}
+                    {% endif %}
+                    
+
+
+
+                    ## ALTER for Warehouse if necessary
+                    {% set dynamicTableWarehouse = '' %}
+                    {% if desiredDynamicTableWarehouse != currentDynamicTableWarehouse %}
+                        {% set dynamicTableWarehouse = 'WAREHOUSE = ' + desiredDynamicTableWarehouse %}
+                    {% endif %}
+
+                    ## Alter for Target lag if necessary
+                    {% set dynamicTableLagSpecification = '' %}
+                    {% if desiredDynamicTableLagSpecification != currentDynamicTableLagSpecification %}
+                        {% if desiredDynamicTableLagSpecification == 'DOWNSTREAM' %}
+                            {% set dynamicTableLagSpecification = 'TARGET_LAG = DOWNSTREAM' %}
+                        {% else %}
+                            {% set dynamicTableLagSpecification = 'TARGET_LAG = ' + '\'' + desiredDynamicTableLagSpecification + '\'' %}
+                        {% endif %}
+                    {% endif %}
+
+
+
+                    {%- if desiredState.node.description | length > 0 %} 
+                        {% set dynamicTableComment = "COMMENT = " + "'" + desiredState.node.description + "'" %}
+                    {% endif %}
+
+                    {{ stage('Alter Dynamic Table', true, "sql", "create") }}
+                    ALTER DYNAMIC TABLE {{ desiredFullyQualifiedTargetDynamicTableName }} SET
+                        {{ dynamicTableWarehouse }}
+                        {{ dynamicTableLagSpecification }}
+                        {{ dynamicTableComment }}
+                    
+                    {{ stage('Refresh Dynamic Table', true, "sql", "create") }}
+                    ALTER DYNAMIC TABLE {{ desiredFullyQualifiedTargetDynamicTableName }} REFRESH
+
+                {% else %}
+                    {{ stage('Nothing to do.') }}
+                    select 1 = 0
+                
+                {% endif %}
+                    
+            {% elif currentState != undefined and desiredState == undefined %}
+
+                ## Dynamic Table Name
+                {% set targetDynamicTableDatabase = ref_no_link(currentState.node.location.name, currentState.node.name).split('.')[0] %} 
+                {% set targetDynamicTableSchema = ref_no_link(currentState.node.location.name, currentState.node.name).split('.')[1] %} 
+                {% set fullyQualifiedTargetDynamicTableName = ref_no_link(currentState.node.location.name, currentState.node.name) %}
+
+                {{ stage('Drop Dynamic Table', true, "sql", "drop") }}
+                DROP DYNAMIC TABLE IF EXISTS {{ fullyQualifiedTargetDynamicTableName }}
+
+
+            {%- else -%}
+
+            {{ stage('Nothing to do.') }}
+            select 1 = 0
+
+            {% endif %}
+        run:
+          templateString: ""
+    name: Dynamic_Table
+    version: 1
+  StepType-18:
+    id: "18"
+    isDisabled: false
+    metadata:
+      defaultStorageLocation: null
+      error: null
+      nodeMetadataSpec: |-
+        capitalized: New Type
+        short: NEW
+        tagColor: gray
+        plural: New Types
+      templates:
+        create:
+          templateString: ""
+        run:
+          templateString: ""
+    name: New Type
+    version: 1
+  StepType-19:
+    id: "19"
+    isDisabled: false
+    metadata:
       defaultStorageLocation: null
       error: null
       nodeMetadataSpec: |-
@@ -1167,7 +1903,6 @@ stepTypes:
             type: textBox
             isRequired: false
 
-
         systemColumns:
         - displayName: IS_ACTIVE
           transform: ""
@@ -1206,7 +1941,7 @@ stepTypes:
           attributeName: system_is_last_rolling_year
       templates:
         create:
-          templateString: |-
+          templateString: |
             {{ stage('Create Snapshot v1 View') }}
 
             {% if config.use_logarithmic_logic %}
@@ -1235,7 +1970,6 @@ stepTypes:
             {% set sdts_alias = datavault4coalesce.config.sdts_alias %}
             {% set ns = namespace(forever_status=FALSE) %}
             {% set snapshot_trigger_column = 'IS_ACTIVE' %}
-
 
             CREATE OR REPLACE VIEW {{ ref_no_link(node.location.name, node.name) }}
             (
@@ -1394,51 +2128,41 @@ stepTypes:
           templateString: ""
     name: "Datavault by Scalefree: Snapshot v1"
     version: 1
-  StepType-18:
-    id: "18"
+  StepType-20:
+    id: "20"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
-        capitalized: 'DATAVAULT BY SCALEFREE: MULTI-ACTIVE SATELLITE V0'
-        short: 'SATMV0'
-        plural: 'DATAVAULT BY SCALEFREE: MULTI-ACTIVE SATELLITES V0'
-        tagColor: '#dfdf1f'
+        capitalized: 'PIT_PERSISTENT'
+        short: 'PIT_PERSISTENT'
+        tagColor: '#C0C0C0'
+        plural: 'DATAVAULT BY SCALEFREE: PITS'
 
         config:
         - groupName: Data Vault
           items:
-          - displayName: Hashkey Column
+          - displayName: Dimension Key Column
             type: columnSelector
-            attributeName: is_hk
-            isRequired: true
-          
-          - displayName: Multi-Active Key Column
-            type: columnSelector
-            attributeName: is_ma_key
+            attributeName: is_dimension_key
             isRequired: true
 
-          - displayName: Hashdiff Column
-            type: columnSelector
-            attributeName: is_hd
-            isRequired: true
+          - displayName: Clean Up PIT
+            type: toggleButton
+            attributeName: cleanup_pit
+            default: true
 
-        - groupName: Pre/Post SQL
-          items:
-          - displayName: Pre-SQL
-            attributeName: preSQL
-            type: textBox
-            isRequired: false
-
-          - displayName: Post-SQL
-            attributeName: postSQL
-            type: textBox
-            isRequired: false
+          - displayName: Enable Tests
+            attributeName: testsEnabled
+            type: toggleButton
+            default: true
       templates:
         create:
-          templateString: |
-            {{ stage('Create Satellite Table') }}
+          templateString: |-
+            {{ stage('Create PIT Table') }}
+
+            {%- set ns = namespace(sdts_datatype = '') %}
 
             CREATE OR REPLACE TABLE {{ ref_no_link(node.location.name, node.name) }}
             (
@@ -1453,97 +2177,282 @@ stepTypes:
             )
             {%- if node.description | length > 0 %} COMMENT = '{{ node.description }}'{% endif %}
         run:
-          templateString: |-
+          templateString: |
             {% if config.preSQL %}
+
               {{ stage('Pre-SQL') }}
+
               {{ config.preSQL }}
+
             {% endif %}
+
+             
+
+            {% for test in node.tests if config.testsEnabled %}
+
+              {% if test.runOrder == 'Before' %}
+
+                {{ test_stage(test.name, test.continueOnFailure) }}
+
+                {{ test.templateString }}
+
+              {% endif %}
+
+            {% endfor %}
+
+             
 
             {{ stage('Insert New Rows') }}
 
+             
+
+            {%- set loc = storageLocations | selectattr('name', "eq", node.location.name) | list | first -%}
+
+            {%- set target_database = loc.database -%}
+
+            {%- set target_schema = loc.name -%}
+
+            {%- set target_node = node.name -%}
+
+             
+
+            {%- set ns = namespace(sdts_node_name='', hub_node_name='', hub_node_schema='') -%}
+
+             
+
             INSERT INTO {{ ref_no_link(node.location.name, node.name) }}
 
-            WITH latest_entries_in_sat AS (
-              /* get current rows from satellite */
+            WITH records_to_insert AS (
 
-              {# /* USE THIS again when ColumnDropdownSelector is used
-              {%- set hashkey_column = config.is_hk.name -%}
-              {%- set hashdiff_column = config.is_hd.name -%} */ #}
-              
-              {%- set hashkey_column = get_value_by_column_attribute("is_hk") -%}
-              {%- set hashdiff_column = get_value_by_column_attribute("is_hd") -%}
+              SELECT
 
-              SELECT 
-                "{{ hashkey_column }}",
-                "{{ hashdiff_column }}"
+              {% for col in sources[0].columns %}
 
-              FROM {{ ref_no_link(node.location.name, node.name) }} 
+             
 
-              QUALIFY ROW_NUMBER() OVER (PARTITION BY "{{ hashkey_column }}" ORDER BY "{{ datavault4coalesce.config.ldts_alias }}" DESC) = 1
+                {% if 'column' in col.sourceColumns[0].keys() -%}
 
-            ),
+             
 
-            deduplicated_numbered_source AS (
-                
-                {% for source in sources %}
+                  {%- set source_node_name = col.sourceColumns[0].node.name -%}
 
-                    SELECT
-                {% for col in source.columns %}
-                  {{ get_source_transform(col) }} AS {{ col.name }},
+                  {%- set source_node_schema = col.sourceColumns[0].node.location.name -%}
+
+                  {%- set source_column_name = col.sourceColumns[0].column.name -%}
+
+                  {%- set target_column_name = col.name -%}
+
+             
+
+                  {%- if col.sourceColumns[0].column.is_Hub_hk  or col.sourceColumns[0].column.is_Link_hk -%}
+
+                            {%- set ns.hub_node_name = source_node_name -%}
+
+                            {%- set ns.hub_node_schema = source_node_schema -%}
+
+                    COALESCE("{{ source_node_name }}"."{{ target_column_name }}", {{ datavault4coalesce__unknown_key() }}) AS "{{ target_column_name }}"
+
+                  {%- elif col.sourceColumns[0].column.is_hk -%}
+
+                    COALESCE("{{ source_node_name }}"."{{ source_column_name }}", {{ datavault4coalesce__unknown_key() }}) AS "{{ target_column_name }}"      
+
+                  {%- elif source_column_name == datavault4coalesce.config.ldts_alias -%}
+
+                    COALESCE("{{ source_node_name }}"."{{ source_column_name }}", {{ datavault4coalesce__string_to_timestamp(datavault4coalesce.config.timestamp_format, datavault4coalesce.config.beginning_of_all_times) }}) AS "{{ target_column_name }}"
+
+                  {%- elif col.name == datavault4coalesce.config.sdts_alias -%}
+
+                    "{{ source_node_name }}"."{{ target_column_name }}" AS "{{ target_column_name }}"
+
+             
+
+                            {%- set ns.sdts_node_name = col.sourceColumns[0].node.name -%}
+
+             
+
+                  {%- else -%}
+
+                    "{{ source_node_name }}"."{{ source_column_name }}" AS "{{ target_column_name }}"
+
+                  {%- endif %}
+
+             
+
+                {%- if not loop.last -%} , {% endif %}
+
+                {%- elif col.is_dimension_key -%}
+
+                  {{ get_source_transform(col) }} AS "{{ col.name }}",
+
+                {%- endif %}
+
+             
+
                 {% endfor %}
-                    ROW_NUMBER() OVER(PARTITION BY "{{ hashkey_column }}" ORDER BY "{{ datavault4coalesce.config.ldts_alias }}") as rn
-                    
-                    {{ source.join }}
 
-                {% if not config.disable_hwm -%}
-                WHERE "{{ datavault4coalesce.config.ldts_alias }}" > (
-                  SELECT 
-                    COALESCE(MAX("{{ datavault4coalesce.config.ldts_alias }}"),  {{ datavault4coalesce__string_to_timestamp(datavault4coalesce.config.timestamp_format, datavault4coalesce.config.beginning_of_all_times) }})
-                  FROM {{ ref_no_link(node.location.name, node.name) }}
-                  WHERE "{{ datavault4coalesce.config.ldts_alias }}" != {{ datavault4coalesce__string_to_timestamp(datavault4coalesce.config.timestamp_format, datavault4coalesce.config.end_of_all_times) }}
-                  )
-                  OR "{{ hashkey_column }}" = {{ datavault4coalesce__unknown_key() }}
-                  OR "{{ hashkey_column }}" = {{ datavault4coalesce__error_key() }}
-                {% endif %}  
-                    QUALIFY
-                    CASE
-                        WHEN "{{ hashdiff_column }}" = LAG("{{ hashdiff_column }}") OVER(PARTITION BY "{{ hashkey_column }}" ORDER BY "{{ datavault4coalesce.config.ldts_alias }}" ) THEN FALSE
-                        ELSE TRUE
-                    END
+             
 
-                {% endfor %}
+              FROM {{ ref(ns.hub_node_schema, ns.hub_node_name) }} "{{ ns.hub_node_name }}"
 
-            )
+             
 
-              {% for source in sources %}
-                SELECT DISTINCT
-                {% for col in source.columns %}
-                  {{ col.name }}
-                  {%- if not loop.last -%}, {% endif %}
-                {% endfor %}
+              {% for col in sources[0].columns -%}
 
-                FROM deduplicated_numbered_source
-              WHERE NOT EXISTS (
-                SELECT 1 FROM latest_entries_in_sat
-                WHERE 
-                  deduplicated_numbered_source.{{ hashdiff_column }} = latest_entries_in_sat."{{ hashdiff_column }}"
-                AND deduplicated_numbered_source.{{ hashkey_column }} = latest_entries_in_sat."{{ hashkey_column }}"
-                    AND deduplicated_numbered_source.rn = 1
-              )
+                {%- if col.name == datavault4coalesce.config.sdts_alias -%}
+
+             
+
+                        {%- set source_node_name = col.sourceColumns[0].node.name -%}
+
+                  {%- set source_node_schema = col.sourceColumns[0].node.location.name -%}
+
+             
+
+                  JOIN {{ ref(source_node_schema, source_node_name) }} "{{ source_node_name }}"
+
+                  ON "{{ source_node_name }}"."{{ datavault4coalesce.config.snapshot_trigger_column }}" = true
+
+                {%- endif -%}
 
               {% endfor %}
 
-            {% if config.postSQL %}
-              {{ stage('Post-SQL') }}
-              {{ config.postSQL }}
+             
+
+              {%- for col in sources[0].columns %}
+
+               
+
+                {%- if 'column' in col.sourceColumns[0].keys() %}
+
+                  {%- if col.sourceColumns[0].column.is_hk and not loop.first %}
+
+             
+
+                            {%- set source_node_name = col.sourceColumns[0].node.name -%}
+
+                    {%- set source_node_schema = col.sourceColumns[0].node.location.name -%}
+
+                            {%- set source_column_name = col.sourceColumns[0].column.name -%}
+
+                            {%- set target_node = node.name -%}
+
+             
+
+                    LEFT JOIN {{ ref(source_node_schema, source_node_name) }} "{{ source_node_name }}"
+
+                    ON "{{ ns.hub_node_name }}"."{{ source_column_name }}" = "{{ source_node_name }}"."{{ source_column_name }}"
+
+                   
+
+                            {% for sdts_col in sources[0].columns %}
+
+             
+
+                      {%- if sdts_col.name == datavault4coalesce.config.sdts_alias -%}
+
+                        AND "{{ ns.sdts_node_name }}"."{{ sdts_col.name}}" BETWEEN "{{ source_node_name }}"."{{ datavault4coalesce.config.ldts_alias }}" and "{{ source_node_name }}"."{{ datavault4coalesce.config.ledts_alias }}"
+
+                      {%- endif -%}
+
+                    {%- endfor -%}
+
+                 
+
+                  {% endif %}
+
+                {%- endif %}
+
+              {% endfor -%}
+
+            )
+
+             
+
+            SELECT * FROM records_to_insert
+             
+
+            {% if config.cleanup_pit %}
+
+             
+
+            {{ stage('Clean up PIT') }}
+
+             
+
+              DELETE FROM {{ ref_no_link(node.location.name, node.name) }}
+
+              WHERE "{{ datavault4coalesce.config.sdts_alias }}" NOT IN (
+
+                SELECT "{{ datavault4coalesce.config.sdts_alias }}" FROM
+
+                {% for col in sources[0].columns %}
+
+                    {%- if col.name == datavault4coalesce.config.sdts_alias -%}
+
+                        {%- set snapshot_loc = storageLocations | selectattr('name', "eq", col.sourceColumns[0].node.location.name) | list | first -%}
+
+                        {%- set snapshot_node_name = col.sourceColumns[0].node.name -%}
+
+                        "{{ snapshot_loc.database }}"."{{ snapshot_loc.schema }}"."{{ snapshot_node_name }}"
+
+                    {%- endif -%}
+
+                {%- endfor %}
+
+                WHERE "{{ datavault4coalesce.config.snapshot_trigger_column }}" = true
+
+                )
+
             {% endif %}
-    name: "Datavault by Scalefree: Multi-active Satellite V0"
+
+             
+
+            {% if config.postSQL %}
+
+              {{ stage('Post-SQL') }}
+
+              {{ config.postSQL }}
+
+            {% endif %}
+
+             
+
+            {% if config.testsEnabled %}
+
+              {% for test in node.tests %}
+
+                {% if test.runOrder == 'After' %}
+
+                  {{ test_stage(test.name, test.continueOnFailure) }}
+
+                  {{ test.templateString }}
+
+                    {% endif %}
+
+              {% endfor %}
+
+             
+
+              {% for column in columns %}
+
+                {% for test in column.tests %}
+
+                  {{ test_stage(column.name + ": " + test.name) }}
+
+                  {{ test.templateString }}
+
+                {% endfor %}
+
+              {% endfor %}
+
+            {% endif %}
+    name: PIT_PERSISTENT
     version: 1
   StepType-21:
     id: "21"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: MULTI-ACTIVE SATELLITE V1'
@@ -1629,11 +2538,216 @@ stepTypes:
           templateString: ""
     name: "Datavault by Scalefree: Multi-active Satellite v1"
     version: 1
+  StepType-22:
+    id: "22"
+    isDisabled: false
+    metadata:
+      defaultStorageLocation: null
+      error: null
+      nodeMetadataSpec: |
+        capitalized: 'PIT RE-engineer'
+        short: 'PIT_re'
+        tagColor: '#C0C0C0'
+        plural: 'DATAVAULT BY SCALEFREE: PITS'
+
+        config:
+        - groupName: Data Vault
+          items:
+          - displayName: Dimension Key Column
+            type: columnSelector
+            attributeName: is_dimension_key
+            isRequired: true
+
+          - displayName: Date Filter Key
+            type: columnSelector
+            attributeName: is_date_filter_key
+            isRequired: true
+
+          - displayName: Clean Up PIT
+            type: toggleButton
+            attributeName: cleanup_pit
+            default: true
+
+          - displayName: Enable Tests
+            attributeName: testsEnabled
+            type: toggleButton
+            default: true
+      templates:
+        create:
+          templateString: |
+            {{ stage('Create PIT Table') }}
+            
+            {%- set ns = namespace(sdts_datatype = '') %}
+            
+            CREATE OR REPLACE TABLE {{ ref_no_link(node.location.name, node.name) }}
+            (
+              {% for col in columns %}
+                "{{ col.name }}" {{ col.dataType }}
+                {%- if not col.nullable %} NOT NULL
+                  {%- if col.defaultValue | length > 0 %} DEFAULT {{ col.defaultValue }}{% endif %}
+                {% endif %}
+                {%- if col.description | length > 0 %} COMMENT '{{ col.description }}'{% endif %}
+                {%- if not loop.last -%}, {% endif %}
+              {% endfor %}
+            )
+            {%- if node.description | length > 0 %} COMMENT = '{{ node.description }}'{% endif %}
+        run:
+          templateString: |-
+            {% if config.preSQL %}
+              {{ stage('Pre-SQL') }}
+              {{ config.preSQL }}
+            {% endif %}
+            
+            {% for test in node.tests if config.testsEnabled %}
+              {% if test.runOrder == 'Before' %}
+                {{ test_stage(test.name, test.continueOnFailure) }}
+                {{ test.templateString }}
+              {% endif %}
+            {% endfor %}
+            
+            {{ stage('Insert New Rows') }}
+            
+            {%- set loc = storageLocations | selectattr('name', "eq", node.location.name) | list | first -%}
+            {%- set target_database = loc.database -%}
+            {%- set target_schema = loc.name -%}
+            {%- set target_node = node.name -%}
+            
+            {%- set ns = namespace(sdts_node_name='', hub_node_name='', hub_node_schema='') -%}
+            
+            INSERT INTO {{ ref_no_link(node.location.name, node.name) }}
+            WITH records_to_insert AS (
+              SELECT
+              {% for col in sources[0].columns %}
+            
+                {% if 'column' in col.sourceColumns[0].keys() -%}
+            
+                  {%- set source_node_name = col.sourceColumns[0].node.name -%}
+                  {%- set source_node_schema = col.sourceColumns[0].node.location.name -%}
+                  {%- set source_column_name = col.sourceColumns[0].column.name -%}
+                  {%- set target_column_name = col.name -%}
+            
+                  {%- if col.sourceColumns[0].column.is_Hub_hk  or col.sourceColumns[0].column.is_Link_hk -%}
+                            {%- set ns.hub_node_name = source_node_name -%}
+                            {%- set ns.hub_node_schema = source_node_schema -%}
+                    COALESCE("{{ source_node_name }}"."{{ target_column_name }}", {{ datavault4coalesce__unknown_key() }}) AS "{{ target_column_name }}"
+                  {%- elif col.sourceColumns[0].column.is_hk -%}
+                    COALESCE("{{ source_node_name }}"."{{ source_column_name }}", {{ datavault4coalesce__unknown_key() }}) AS "{{ target_column_name }}"      
+                  {%- elif source_column_name == datavault4coalesce.config.ldts_alias -%}
+                    COALESCE("{{ source_node_name }}"."{{ source_column_name }}", {{ datavault4coalesce__string_to_timestamp(datavault4coalesce.config.timestamp_format, datavault4coalesce.config.beginning_of_all_times) }}) AS "{{ target_column_name }}"
+                  {%- elif col.name == datavault4coalesce.config.sdts_alias -%}
+                    "{{ source_node_name }}"."{{ target_column_name }}" AS "{{ target_column_name }}"
+            
+                            {%- set ns.sdts_node_name = col.sourceColumns[0].node.name -%}
+            
+                  {%- else -%}
+                    "{{ source_node_name }}"."{{ source_column_name }}" AS "{{ target_column_name }}"
+                  {%- endif %}
+            
+                {%- if not loop.last -%} , {% endif %}
+                {%- elif col.is_dimension_key -%}
+                  {{ get_source_transform(col) }} AS "{{ col.name }}",
+                {%- elif col.is_date_filter_key -%}
+                  {{ get_source_transform(col) }} AS "{{ col.name }}"
+                {%- endif %}
+            
+                {% endfor %}
+            
+              FROM {{ ref(ns.hub_node_schema, ns.hub_node_name) }} "{{ ns.hub_node_name }}"
+            
+              {% for col in sources[0].columns -%}
+                {%- if col.name == datavault4coalesce.config.sdts_alias -%}
+            
+                        {%- set source_node_name = col.sourceColumns[0].node.name -%}
+                  {%- set source_node_schema = col.sourceColumns[0].node.location.name -%}
+            
+                  JOIN {{ ref(source_node_schema, source_node_name) }} "{{ source_node_name }}"
+                  ON "{{ source_node_name }}"."{{ datavault4coalesce.config.snapshot_trigger_column }}" = true
+                {%- endif -%}
+              {% endfor %}
+            
+              {%- for col in sources[0].columns %}
+                
+                {%- if 'column' in col.sourceColumns[0].keys() %}
+                  {%- if col.sourceColumns[0].column.is_hk and not loop.first %}
+            
+                            {%- set source_node_name = col.sourceColumns[0].node.name -%}
+                    {%- set source_node_schema = col.sourceColumns[0].node.location.name -%}
+                            {%- set source_column_name = col.sourceColumns[0].column.name -%}
+                            {%- set target_node = node.name -%}
+            
+                    LEFT JOIN {{ ref(source_node_schema, source_node_name) }} "{{ source_node_name }}"
+                    ON "{{ ns.hub_node_name }}"."{{ source_column_name }}" = "{{ source_node_name }}"."{{ source_column_name }}"
+                    
+                            {% for sdts_col in sources[0].columns %}
+            
+                      {%- if sdts_col.name == datavault4coalesce.config.sdts_alias -%}
+                        AND "{{ ns.sdts_node_name }}"."{{ sdts_col.name}}" BETWEEN "{{ source_node_name }}"."{{ datavault4coalesce.config.ldts_alias }}" and "{{ source_node_name }}"."{{ datavault4coalesce.config.ledts_alias }}"
+                      {%- endif -%}
+                    {%- endfor -%}
+                  
+                  {% endif %}
+                {%- endif %}
+              {% endfor -%}
+            )
+            
+            SELECT * FROM records_to_insert
+            WHERE "{{ get_value_by_column_attribute('is_dimension_key') }}" NOT IN 
+            (
+              SELECT "{{ get_value_by_column_attribute('is_dimension_key') }}" FROM 
+              {{ ref_no_link(node.location.name, node.name) }}
+            )
+            AND
+            "{{ get_value_by_column_attribute('is_date_filter_key') }}" NOT IN 
+            (
+              SELECT "{{ get_value_by_column_attribute ('is_date_filter_key') }}" FROM
+              {{ ref_no_link(node.location.name, node.name) }}
+            )
+            
+            {% if config.cleanup_pit %}
+            
+            {{ stage('Clean up PIT') }}
+            
+              DELETE FROM {{ ref_no_link(node.location.name, node.name) }}
+              WHERE "{{ datavault4coalesce.config.sdts_alias }}" NOT IN (
+                SELECT "{{ datavault4coalesce.config.sdts_alias }}" FROM 
+                {% for col in sources[0].columns %}
+                    {%- if col.name == datavault4coalesce.config.sdts_alias -%}
+                        {%- set snapshot_loc = storageLocations | selectattr('name', "eq", col.sourceColumns[0].node.location.name) | list | first -%}
+                        {%- set snapshot_node_name = col.sourceColumns[0].node.name -%}
+                        "{{ snapshot_loc.database }}"."{{ snapshot_loc.schema }}"."{{ snapshot_node_name }}"
+                    {%- endif -%}
+                {%- endfor %}
+                WHERE "{{ datavault4coalesce.config.snapshot_trigger_column }}" = true
+                )
+            {% endif %}
+            
+            {% if config.postSQL %}
+              {{ stage('Post-SQL') }}
+              {{ config.postSQL }}
+            {% endif %}
+            
+            {% if config.testsEnabled %}
+              {% for test in node.tests %}
+                {% if test.runOrder == 'After' %}
+                  {{ test_stage(test.name, test.continueOnFailure) }}
+                  {{ test.templateString }}
+                    {% endif %}
+              {% endfor %}
+            
+              {% for column in columns %}
+                {% for test in column.tests %}
+                  {{ test_stage(column.name + ": " + test.name) }}
+                  {{ test.templateString }}
+                {% endfor %}
+              {% endfor %}
+            {% endif %}
+    name: PIT REENG
+    version: 1
   StepType-23:
     id: "23"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: NON-HISTORIZED LINK'
@@ -1764,7 +2878,7 @@ stepTypes:
     id: "24"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: NON-HISTORIZED SATELLITE'
@@ -1888,7 +3002,7 @@ stepTypes:
     id: "27"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: RECORD TRACKING SATELLITE'
@@ -2016,7 +3130,7 @@ stepTypes:
     id: "4"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: STG
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: STAGE'
@@ -2190,7 +3304,7 @@ stepTypes:
     id: "6"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: HUB'
@@ -2363,7 +3477,7 @@ stepTypes:
     id: "7"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: LINK'
@@ -2518,7 +3632,7 @@ stepTypes:
     id: "8"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: SATELLITE V0'
@@ -2696,7 +3810,7 @@ stepTypes:
     id: "9"
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |-
         capitalized: 'DATAVAULT BY SCALEFREE: SATELLITE V1'
@@ -4190,9 +5304,9 @@ stepTypes:
     version: 1
   StepType-View:
     id: View
-    isDisabled: true
+    isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: RAW_VAULT
       error: null
       nodeMetadataSpec: |
         capitalized: View
@@ -4738,72 +5852,33 @@ stepTypes:
     name: Persistent Stage
     version: 1
 subgraphs:
-  Subgraph-2:
-    id: "2"
-    name: Customer_DV
+  Subgraph-31:
+    id: "31"
+    name: EVENT
     steps:
-      - 19132bb6-675c-4d9c-9a8a-3c8fe1062c39
-      - 0b951aa9-1f3f-4de0-8fea-39fd45b3dfee
-      - ff18aa02-68bb-4331-8350-207514469acc
-      - 89a017d6-7c81-40c6-b952-5cd49bd562db
-      - 1454af6b-ae6c-4ce3-985c-4f38c53154e4
-      - 5115e60e-0b44-4a56-8af3-f22538f61ca6
-      - e7594ec0-1e16-4604-b36d-33e65c56b70c
-      - 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
-  Subgraph-3:
-    id: "3"
-    name: Partsupp_DV
+      - 9954929b-1f4b-4f1d-8d88-6bb32b4ee832
+      - ace9c837-a5cc-4903-9e5e-ed2872a3a077
+      - a9a1051d-8aa0-4543-b986-e172fc95847b
+      - f8ae64cb-b448-469e-b9c9-b041cbef64d6
+      - 0d5ba564-1068-4532-b667-a63275cb78b9
+      - 6008fcde-2d95-4a23-95ef-ff2b93a41f91
+      - 04d81a57-e434-4b78-8e65-8ad334432d5d
+      - 0bc53a4f-e496-4731-97ef-7bbf0525025b
+      - 786230c7-de18-41cd-a015-edbf532752bf
+      - 312e32a6-287e-44f2-aeae-ca3bb6adff66
+      - 699224f4-c519-47d7-ade9-7dfcf34a32d4
+      - 014e03aa-e591-41d2-84e4-432b5ed11857
+  Subgraph-32:
+    id: "32"
+    name: PARTY
     steps:
-      - 96251b7b-bc55-4dfa-8d5f-d1e24075e00d
-      - a9e2faf9-9422-4dc2-b242-65bac3eb16be
-      - 73206b0d-1c54-4dd6-b7d1-28badc224d5e
-      - 86ab364d-08ed-43c6-99ce-e83ab2a6b9bb
-      - 16d6fe59-cb4a-47cf-be52-66d5d81a11db
-      - 95da3e91-b2f6-48d3-a3cb-6320a6d208d4
-      - f628d40b-4e5e-4225-bc2f-6b0d9a79f9c7
-      - 4523267a-edbe-44c2-82ee-a98bcc39f496
-  Subgraph-4:
-    id: "4"
-    name: Demo
-    steps: []
-  Subgraph-5:
-    id: "5"
-    name: Demo
-    steps:
-      - "162"
-      - "164"
-      - "165"
-      - "168"
-      - "180"
-  Subgraph-6:
-    id: "6"
-    name: Only Sources
-    steps:
-      - "162"
-      - "164"
-      - "165"
-      - "168"
-      - "226"
-      - "231"
-      - "233"
-      - "234"
-      - "236"
-  Subgraph-7:
-    id: "7"
-    name: Webinar
-    steps:
-      - "162"
-      - "165"
-      - "290"
-      - "298"
-      - "299"
-      - "300"
-      - "301"
-      - "302"
-      - "303"
-      - "304"
-  Subgraph-8:
-    id: "8"
-    name: New Subgraph
-    steps: []
+      - 89304bb1-edba-4d86-b99d-ee509519097b
+      - 556180df-1d64-45ac-b9a3-3df40b2fa157
+      - 6c935978-2933-41a4-bb39-04c0a76234d4
+      - efa9517a-2b1f-4ee5-93ce-aa41f78bad3b
+      - 023fc417-4e59-4d50-9024-daf9f80fbe72
+      - fb63757e-1f24-4b28-b0ed-fcbee59dcf73
+      - 27cb4679-b60b-4a34-bab1-c6b4b9090b53
+      - ccaec8b3-6ed7-44f9-9ec2-749f8d8c0f46
+      - 79f1d458-03e0-48e8-ae6a-d93c5b3a7aea
 version: 2
