@@ -1,0 +1,202 @@
+fileVersion: 1
+id: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+name: INC_EVENT_LOC_SAT
+operation:
+  config:
+    persistTable: ""
+    persistTableLocation: DWH
+    persistTableName: ""
+    refTable: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: STG
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2afad569-7a67-4385-ad5c-2c21f3d0b9af
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 19c5bf04-9ad5-40dc-86bc-23ca1005ebcc
+            stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        name: HK_EVENT_ID
+        nullable: true
+        sourceColumnReferences: []
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff7b9842-2284-4ca9-9304-fac980869e63
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 03b19662-2f70-4cd2-9551-dc3b90107681
+            stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+          - columnCounter: 290a578e-1fbe-4c3a-bc63-29ee61916a1d
+            stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+          - columnCounter: 0b425a69-f985-42d7-bcd9-16547aff8f7e
+            stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+          - columnCounter: eb7efc40-cc4e-496b-9d04-3d1977ab10ff
+            stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+          - columnCounter: f7d5a014-e0ab-4d55-bf82-0e648c65157a
+            stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        name: HD_EVENT
+        nullable: true
+        sourceColumnReferences: []
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19c5bf04-9ad5-40dc-86bc-23ca1005ebcc
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2ba96258-e042-4dea-9d14-ae15eb49ec17
+                stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03b19662-2f70-4cd2-9551-dc3b90107681
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LOCATION_TYPE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96ab4032-a7b2-469c-8127-3eeaa0922c19
+                stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 290a578e-1fbe-4c3a-bc63-29ee61916a1d
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRIMARY_LOC_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e17ba60-f505-4919-b36d-61d414aa516d
+                stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b425a69-f985-42d7-bcd9-16547aff8f7e
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ZIP_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e966a7f6-fd04-4809-8ec9-bf4df46e65fc
+                stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb7efc40-cc4e-496b-9d04-3d1977ab10ff
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: COUNTRY_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee9cec9e-d5f7-416f-a7be-460421d139cb
+                stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7d5a014-e0ab-4d55-bf82-0e648c65157a
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0cc0afa1-89e4-49a0-98c7-cc36f8d41aa8
+                stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45734523-8353-4b3f-a11e-44e9184a60cc
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        is_system_ldts: true
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: SYSDATE()
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1cdc05f-6f92-41bd-ad83-92a55460cbfd
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The Record Source (RSRC) describes the source of this data.
+        is_system_rsrc: true
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{record_source()}}"
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_VAULT
+            nodeName: EVENT
+        join:
+          joinCondition: FROM {{ ref('RAW_VAULT', 'EVENT') }} "EVENT"
+        name: INC_EVENT_LOC_SAT
+        noLinkRefs: []
+  name: INC_EVENT_LOC_SAT
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node
