@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 912f50df-3a2f-4275-a66f-b95b45edf4ed
-name: STG_EVENT_SAT
+name: STG_EVENT
 operation:
   config:
     insertStrategy: INSERT
@@ -224,9 +224,9 @@ operation:
             nodeName: INC_EVENT_SAT
         join:
           joinCondition: FROM {{ ref('STG', 'INC_EVENT_SAT') }} "INC_EVENT_SAT"
-        name: STG_EVENT_SAT
+        name: STG_EVENT
         noLinkRefs: []
-  name: STG_EVENT_SAT
+  name: STG_EVENT
   overrideSQL: false
   schema: ""
   sqlType: Stage
