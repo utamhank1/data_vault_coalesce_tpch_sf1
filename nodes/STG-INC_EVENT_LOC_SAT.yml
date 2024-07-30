@@ -40,7 +40,7 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: ff7b9842-2284-4ca9-9304-fac980869e63
+          columnCounter: 3dfdbffe-9cf7-46b7-8241-2547a3f5bf4e
           stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
         config: {}
         dataType: STRING
@@ -49,6 +49,8 @@ operation:
         hashDetails:
           hashAlgorithm: SHA1
         hashedColumns:
+          - columnCounter: f7d5a014-e0ab-4d55-bf82-0e648c65157a
+            stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
           - columnCounter: 03b19662-2f70-4cd2-9551-dc3b90107681
             stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
           - columnCounter: 290a578e-1fbe-4c3a-bc63-29ee61916a1d
@@ -57,7 +59,7 @@ operation:
             stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
           - columnCounter: eb7efc40-cc4e-496b-9d04-3d1977ab10ff
             stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
-          - columnCounter: f7d5a014-e0ab-4d55-bf82-0e648c65157a
+          - columnCounter: ba235f72-65a5-414a-8a0c-7ba3a3beca5c
             stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
         name: HD_EVENT
         nullable: true
@@ -83,7 +85,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: LOCATION_TYPE_CODE
+        name: LOC_TYPE_CODE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -125,11 +127,28 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: COUNTRY_CODE
+        name: CNTRY_CODE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: ee9cec9e-d5f7-416f-a7be-460421d139cb
+                stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba235f72-65a5-414a-8a0c-7ba3a3beca5c
+          stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: COUNTY_OF_INJURY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c06769ca-4b3b-4207-afc0-62bfbfcd7084
                 stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
             transform: ""
       - appliedColumnTests: {}

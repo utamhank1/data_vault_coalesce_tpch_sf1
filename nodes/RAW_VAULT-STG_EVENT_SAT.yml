@@ -1,0 +1,235 @@
+fileVersion: 1
+id: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+name: STG_EVENT_SAT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW_VAULT
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f27647c3-726d-477b-9fdc-173c7458833e
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d40dbec-97e1-40bb-847e-2cc089c6b27a
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e9e06a1-3604-4488-9f06-b0cae0fc94ca
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HD_EVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20b05c6b-f379-42a0-bd90-d44a1f0ea40a
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 824986f7-ec4d-4e10-bda9-343aef5cc18b
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_CLIENT_PROGRAM_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 549cc0e3-639d-4d9d-88a0-35c6cb4a050f
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea9f6a86-8c87-4555-8b32-4eb80f90396e
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17739226-431e-4953-a3af-4fc53f12b141
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92ce48c8-7e93-4246-b2b7-964b4b0f7342
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CLIENT_PROGRAM_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5bb7295f-e765-42de-9485-cd9dc7ea3528
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57429224-515a-4533-b4ea-27b90d2b3646
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_IND_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 171475b0-a679-42c1-b657-9f9f126f3289
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 899412dc-8ff0-4277-b221-107b591922d1
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EVENT_NUM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: df0bf2bc-9b79-4cd2-816d-6da8fd55d2e3
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d0a17ea-a61f-4451-a782-a7e3ccd1406e
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_STS_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a95563b6-dd17-4d95-98a9-c754e59de35f
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c46a27e-cdf3-48c0-8941-575f9a354120
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_TYPE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c2e11b37-b368-4992-aa43-eddd0087b130
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 405498c8-7ca2-4112-88e2-ec8c8115cd0e
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: NUMBER(38)
+        description: ""
+        name: EVENT_DT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 445ac393-5e9f-4c75-ba5c-166cfa505a2b
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5762fad-758e-4258-9ba8-a3b23c1e10a1
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CAUSE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a9bf082-8c45-499a-ac46-e1756b0ac172
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d4fea9b-9d0a-4c5b-87cb-fc48370a0738
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DEPT_EID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2bfd4f2c-932e-4093-aa9b-eed1503fef17
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0acb70e-1191-4341-9cb4-655ad91b9f96
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed4a5212-9851-438f-8a00-51cef95fa23e
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3972f467-8eee-47d1-9b31-fcf4a2f63967
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 846e3a7f-0301-4f21-ba7f-422848a70f6a
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: STG
+            nodeName: INC_EVENT_SAT
+        join:
+          joinCondition: FROM {{ ref('STG', 'INC_EVENT_SAT') }} "INC_EVENT_SAT"
+        name: STG_EVENT_SAT
+        noLinkRefs: []
+  name: STG_EVENT_SAT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

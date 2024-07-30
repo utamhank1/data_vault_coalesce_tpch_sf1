@@ -4,8 +4,8 @@ name: INC_EVENT_SAT
 operation:
   config:
     persistTable: ""
-    persistTableLocation: DWH
-    persistTableName: ""
+    persistTableLocation: DV_RAW
+    persistTableName: SAT_EVENT
     refTable: false
   database: ""
   deployEnabled: true
@@ -35,6 +35,54 @@ operation:
         name: HK_EVENT_ID
         nullable: true
         sourceColumnReferences: []
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20b05c6b-f379-42a0-bd90-d44a1f0ea40a
+          stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 171475b0-a679-42c1-b657-9f9f126f3289
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: df0bf2bc-9b79-4cd2-816d-6da8fd55d2e3
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: a95563b6-dd17-4d95-98a9-c754e59de35f
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: c2e11b37-b368-4992-aa43-eddd0087b130
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: 9a9bf082-8c45-499a-ac46-e1756b0ac172
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: 2bfd4f2c-932e-4093-aa9b-eed1503fef17
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+        name: HD_EVENT
+        nullable: true
+        sourceColumnReferences: []
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 549cc0e3-639d-4d9d-88a0-35c6cb4a050f
+          stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 5bb7295f-e765-42de-9485-cd9dc7ea3528
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+        name: HK_CLIENT_PROGRAM_ID
+        nullable: true
+        sourceColumnReferences: []
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 17739226-431e-4953-a3af-4fc53f12b141
@@ -49,37 +97,6 @@ operation:
               - columnCounter: 2ba96258-e042-4dea-9d14-ae15eb49ec17
                 stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
             transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 34edfc73-0482-4472-b846-793021923142
-          stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-        config: {}
-        dataType: STRING
-        defaultValue: ""
-        description: ""
-        hashDetails:
-          hashAlgorithm: SHA1
-        hashedColumns:
-          - columnCounter: 5bb7295f-e765-42de-9485-cd9dc7ea3528
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: 2bfd4f2c-932e-4093-aa9b-eed1503fef17
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: 9a9bf082-8c45-499a-ac46-e1756b0ac172
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: c2e11b37-b368-4992-aa43-eddd0087b130
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: a95563b6-dd17-4d95-98a9-c754e59de35f
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: df0bf2bc-9b79-4cd2-816d-6da8fd55d2e3
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: 171475b0-a679-42c1-b657-9f9f126f3289
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-        name: HD_EVENT
-        nullable: true
-        sourceColumnReferences: []
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5bb7295f-e765-42de-9485-cd9dc7ea3528
@@ -115,7 +132,7 @@ operation:
         config: {}
         dataType: VARCHAR(16777216)
         description: ""
-        name: EVENT_NUMBER
+        name: EVENT_NUM
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -129,7 +146,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: EVENT_STATUS_CODE
+        name: EVENT_STS_CODE
         nullable: true
         sourceColumnReferences:
           - columnReferences:

@@ -1,0 +1,101 @@
+fileVersion: 1
+id: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+name: HUB_EVENT
+operation:
+  config:
+    disable_hwm: true
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW_VAULT
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cf72fa6-bd14-432b-8173-d879fafb3830
+          stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+        config:
+          is_Hub_hk: true
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f27647c3-726d-477b-9fdc-173c7458833e
+                stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eebcb589-c939-4dc4-9d7a-53cd7a1e59cc
+          stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ea9f6a86-8c87-4555-8b32-4eb80f90396e
+                stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 225b81d0-058a-4915-b7dc-649004efe0a5
+          stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0acb70e-1191-4341-9cb4-655ad91b9f96
+                stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd13c432-bdae-4694-8373-64f65c97fe2b
+          stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3972f467-8eee-47d1-9b31-fcf4a2f63967
+                stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_VAULT
+            nodeName: STG_EVENT_SAT
+        join:
+          joinCondition: FROM {{ ref('RAW_VAULT', 'STG_EVENT_SAT') }} "STG_EVENT_SAT"
+        name: HUB_EVENT
+        noLinkRefs: []
+  name: HUB_EVENT
+  overrideSQL: false
+  schema: ""
+  sqlType: "6"
+  type: sql
+  version: 1
+type: Node
