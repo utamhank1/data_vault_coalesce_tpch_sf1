@@ -40,35 +40,6 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 20b05c6b-f379-42a0-bd90-d44a1f0ea40a
-          stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-        config: {}
-        dataType: STRING
-        defaultValue: ""
-        description: ""
-        hashDetails:
-          hashAlgorithm: SHA1
-        hashedColumns:
-          - columnCounter: 171475b0-a679-42c1-b657-9f9f126f3289
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: df0bf2bc-9b79-4cd2-816d-6da8fd55d2e3
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: a95563b6-dd17-4d95-98a9-c754e59de35f
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: c2e11b37-b368-4992-aa43-eddd0087b130
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: 9a9bf082-8c45-499a-ac46-e1756b0ac172
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-          - columnCounter: 2bfd4f2c-932e-4093-aa9b-eed1503fef17
-            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-        name: HD_EVENT
-        nullable: true
-        sourceColumnReferences: []
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
           columnCounter: 549cc0e3-639d-4d9d-88a0-35c6cb4a050f
           stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
         config: {}
@@ -81,6 +52,58 @@ operation:
           - columnCounter: 5bb7295f-e765-42de-9485-cd9dc7ea3528
             stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
         name: HK_CLIENT_PROGRAM_ID
+        nullable: true
+        sourceColumnReferences: []
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a781415-4770-4b7f-ba5d-b648c6e68c19
+          stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 17739226-431e-4953-a3af-4fc53f12b141
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: 5bb7295f-e765-42de-9485-cd9dc7ea3528
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+        name: HK_EVENT_CLIENT_PROGRAM
+        nullable: true
+        sourceColumnReferences: []
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: efb61ddf-527c-4bd2-a879-71388a588cb9
+          stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 445ac393-5e9f-4c75-ba5c-166cfa505a2b
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: 9a9bf082-8c45-499a-ac46-e1756b0ac172
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: c2e11b37-b368-4992-aa43-eddd0087b130
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: a95563b6-dd17-4d95-98a9-c754e59de35f
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: df0bf2bc-9b79-4cd2-816d-6da8fd55d2e3
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: 171475b0-a679-42c1-b657-9f9f126f3289
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+          - columnCounter: 5bb7295f-e765-42de-9485-cd9dc7ea3528
+            stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+        name: HD_EVENT
         nullable: true
         sourceColumnReferences: []
       - appliedColumnTests: {}
@@ -181,6 +204,26 @@ operation:
               - columnCounter: 16d27cc7-38f2-4054-8cae-3ceddb112adc
                 stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 445ac393-5e9f-4c75-ba5c-166cfa505a2b
+          stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: EVENT_DT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b1cea7d-3831-44ef-bce7-ccf604d3d486
+                stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
+            transform: ""
+        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2bfd4f2c-932e-4093-aa9b-eed1503fef17
@@ -231,26 +274,6 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: "{{record_source()}}"
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 445ac393-5e9f-4c75-ba5c-166cfa505a2b
-          stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: EVENT_DT
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 3b1cea7d-3831-44ef-bce7-ccf604d3d486
-                stepCounter: 5181e204-2e10-4dd7-861b-e03193d59604
-            transform: ""
-        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

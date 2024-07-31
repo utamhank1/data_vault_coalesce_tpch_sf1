@@ -31,20 +31,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: d2d12308-446e-4c91-9563-3315ea2cae0c
-          stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
-        config: {}
-        dataType: STRING
-        description: ""
-        name: HD_EVENT
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 5c7965c2-5b0a-49c2-ad9d-c831cb4c42c4
-                stepCounter: 7526afce-a86d-4278-a250-288ee0538c72
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 6a873c1a-039d-4a6d-9404-693b1185ee08
           stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
         config: {}
@@ -218,6 +204,23 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 569ed979-93e1-4f65-81ba-7d11cdad2e76
+                stepCounter: 7526afce-a86d-4278-a250-288ee0538c72
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 144de72c-804b-401e-be02-0d15db77633b
+          stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HD_EVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 435f7a5c-9439-4524-9b76-67d45d2183c4
                 stepCounter: 7526afce-a86d-4278-a250-288ee0538c72
             transform: ""
     cteString: ""

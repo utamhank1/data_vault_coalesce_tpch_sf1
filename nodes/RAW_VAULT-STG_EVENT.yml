@@ -33,20 +33,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 2e9e06a1-3604-4488-9f06-b0cae0fc94ca
-          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
-        config: {}
-        dataType: STRING
-        description: ""
-        name: HD_EVENT
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 20b05c6b-f379-42a0-bd90-d44a1f0ea40a
-                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 824986f7-ec4d-4e10-bda9-343aef5cc18b
           stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
         config: {}
@@ -211,6 +197,40 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 846e3a7f-0301-4f21-ba7f-422848a70f6a
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e120064-0ac0-4edb-ac57-303585c8f8d4
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_CLIENT_PROGRAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3a781415-4770-4b7f-ba5d-b648c6e68c19
+                stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3fa24c99-59ea-4f1a-8790-654add47f395
+          stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HD_EVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: efb61ddf-527c-4bd2-a879-71388a588cb9
                 stepCounter: e2aa7acf-b78d-41fd-9d5f-6703dc8b35d8
             transform: ""
     cteString: ""

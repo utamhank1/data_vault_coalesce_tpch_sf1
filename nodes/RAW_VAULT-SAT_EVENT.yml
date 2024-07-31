@@ -33,21 +33,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 5c7965c2-5b0a-49c2-ad9d-c831cb4c42c4
-          stepCounter: 7526afce-a86d-4278-a250-288ee0538c72
-        config:
-          is_hd: true
-        dataType: STRING
-        description: ""
-        name: HD_EVENT
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 2e9e06a1-3604-4488-9f06-b0cae0fc94ca
-                stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: e98be452-898c-446a-b7b9-2cb7f6a50f8b
           stepCounter: 7526afce-a86d-4278-a250-288ee0538c72
         config: {}
@@ -178,17 +163,36 @@ operation:
               - columnCounter: 3972f467-8eee-47d1-9b31-fcf4a2f63967
                 stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
             transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 435f7a5c-9439-4524-9b76-67d45d2183c4
+          stepCounter: 7526afce-a86d-4278-a250-288ee0538c72
+        config:
+          is_hd: true
+        dataType: STRING
+        description: ""
+        name: HD_EVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3fa24c99-59ea-4f1a-8790-654add47f395
+                stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          STG_EVENT: 912f50df-3a2f-4275-a66f-b95b45edf4ed
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: RAW_VAULT
-            nodeName: STG_EVENT_SAT
+            nodeName: STG_EVENT
         join:
-          joinCondition: FROM {{ ref('RAW_VAULT', 'STG_EVENT_SAT') }} "STG_EVENT_SAT"
+          joinCondition: FROM {{ ref('RAW_VAULT', 'STG_EVENT') }} "STG_EVENT"
         name: SAT_EVENT
         noLinkRefs: []
   name: SAT_EVENT

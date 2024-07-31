@@ -1,6 +1,6 @@
 fileVersion: 1
-id: f4baf53a-cc54-4d30-b9c0-a022c3447d94
-name: HUB_EVENT
+id: 05316387-ab45-43d4-b977-cc444c950eba
+name: LINK_EVENT_CLIENT_PRGM
 operation:
   config:
     disable_hwm: true
@@ -18,10 +18,9 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 9cf72fa6-bd14-432b-8173-d879fafb3830
-          stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
-        config:
-          is_Hub_hk: true
+          columnCounter: 7efda677-329f-4de7-9219-d0a1e4e7e45c
+          stepCounter: 05316387-ab45-43d4-b977-cc444c950eba
+        config: {}
         dataType: STRING
         description: ""
         name: HK_EVENT_ID
@@ -33,25 +32,22 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: eebcb589-c939-4dc4-9d7a-53cd7a1e59cc
-          stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+          columnCounter: 799441d0-66a6-4ff7-9e41-e99607634a20
+          stepCounter: 05316387-ab45-43d4-b977-cc444c950eba
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: STRING
         description: ""
-        name: EVENT_ID
+        name: HK_CLIENT_PROGRAM_ID
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: ea9f6a86-8c87-4555-8b32-4eb80f90396e
+              - columnCounter: 824986f7-ec4d-4e10-bda9-343aef5cc18b
                 stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
             transform: ""
-      - acceptedValues:
-          strictMatch: false
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
-          columnCounter: 225b81d0-058a-4915-b7dc-649004efe0a5
-          stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+          columnCounter: 861294eb-8d7b-4f08-ace3-a586f31e0417
+          stepCounter: 05316387-ab45-43d4-b977-cc444c950eba
         config: {}
         dataType: TIMESTAMP_NTZ(9)
         description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
@@ -62,13 +58,10 @@ operation:
               - columnCounter: a0acb70e-1191-4341-9cb4-655ad91b9f96
                 stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
             transform: ""
-      - acceptedValues:
-          strictMatch: false
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
-          columnCounter: cd13c432-bdae-4694-8373-64f65c97fe2b
-          stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+          columnCounter: 84f0ebfa-2570-4aa0-90ca-ac2ede5423cc
+          stepCounter: 05316387-ab45-43d4-b977-cc444c950eba
         config: {}
         dataType: STRING
         description: The Record Source (RSRC) describes the source of this data.
@@ -79,11 +72,28 @@ operation:
               - columnCounter: 3972f467-8eee-47d1-9b31-fcf4a2f63967
                 stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
             transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9949f2a-c4e6-4919-8591-a94b01202271
+          stepCounter: 05316387-ab45-43d4-b977-cc444c950eba
+        config:
+          is_Link_hk: true
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_CLIENT_PROGRAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0e120064-0ac0-4edb-ac57-303585c8f8d4
+                stepCounter: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases:
-          STG_EVENT: 912f50df-3a2f-4275-a66f-b95b45edf4ed
+      - aliases: {}
         customSQL:
           customSQL: ""
         dependencies:
@@ -91,12 +101,12 @@ operation:
             nodeName: STG_EVENT
         join:
           joinCondition: FROM {{ ref('RAW_VAULT', 'STG_EVENT') }} "STG_EVENT"
-        name: HUB_EVENT
+        name: LINK_EVENT_CLIENT_PRGM
         noLinkRefs: []
-  name: HUB_EVENT
+  name: LINK_EVENT_CLIENT_PRGM
   overrideSQL: false
   schema: ""
-  sqlType: "6"
+  sqlType: "7"
   type: sql
   version: 1
 type: Node

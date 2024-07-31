@@ -1,0 +1,222 @@
+fileVersion: 1
+id: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+name: SATV1_SAT_EVENT_LOC
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW_VAULT
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30f5950c-8725-4b77-85bc-fc6a0e864dcb
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config:
+          is_hk: true
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 74a4a253-419c-47b6-8e28-e3b5b2e4f894
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa30fa3f-865a-446b-b63e-4db7f0597865
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HD_EVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3fee3aed-7e20-4b27-8897-48cfdb768751
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbd979d2-f859-4168-bdbe-851ad04be5f7
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LOC_TYPE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7420447c-edc1-4678-8ec1-1b15a21b2bf5
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f90ae9ba-9e02-4611-b9b5-b08a1c5a1cc2
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRIMARY_LOC_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 65c5c645-d726-4a63-a3d7-f3c32563e4da
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e443e118-9166-42ba-ae87-1d014c1dd3a3
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ZIP_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79bc1351-e6d5-4110-bce2-d728d0e513db
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b36b8bde-4eeb-470d-8485-402dc6389f74
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CNTRY_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52dee549-84da-4010-8698-293ff39de640
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac2eb27c-6910-4a11-912d-1c53befa1544
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: COUNTY_OF_INJURY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 66e217f6-f877-4cb1-b2d9-02f8cd17719d
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9699900e-15ae-47c0-a811-8da0630406ad
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2ebdc4ea-4a59-4ef0-8717-08b14e4bf1cd
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a4970d7-d216-44f6-8e81-10e671cefd6c
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 683cc383-57b8-4d65-abce-23aca0d2a6e1
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d508c794-fda2-4354-8b32-7d8dde85a4eb
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1ce70d3f-22bd-4a3b-ba40-159f3e1e9782
+                stepCounter: 19571d51-796e-4671-aed1-665191000944
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e744911-6e4b-4f1f-9309-068e0af67d20
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        is_system_ledts: true
+        name: LEDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |-
+              COALESCE(LEAD("{{ datavault4coalesce.config.ldts_alias }}" - INTERVAL '1 MICROSECOND') 
+              OVER (PARTITION BY "{{ get_value_by_column_attribute("is_hk") }}" 
+              ORDER BY "{{ datavault4coalesce.config.ldts_alias }}"), {{ datavault4coalesce__string_to_timestamp(datavault4coalesce.config.timestamp_format, datavault4coalesce.config.end_of_all_times) }})
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ca85761-3cf4-4d02-bd90-72fe04496fab
+          stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        is_system_current_col: true
+        name: IS_CURRENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |-
+              CASE 
+                WHEN 
+                  LEAD("{{ datavault4coalesce.config.ldts_alias }}" - INTERVAL '1 MICROSECOND') 
+                  OVER (PARTITION BY "{{ get_value_by_column_attribute("is_hk") }}" 
+                  ORDER BY "{{ datavault4coalesce.config.ldts_alias }}") IS NULL 
+                THEN TRUE 
+                ELSE FALSE 
+              END
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_VAULT
+            nodeName: SAT_EVENT_LOC
+        join:
+          joinCondition: FROM {{ ref('RAW_VAULT', 'SAT_EVENT_LOC') }} "SAT_EVENT_LOC"
+        name: SATV1_SAT_EVENT_LOC
+        noLinkRefs: []
+  name: SATV1_SAT_EVENT_LOC
+  overrideSQL: false
+  schema: ""
+  sqlType: "9"
+  type: sql
+  version: 1
+type: Node

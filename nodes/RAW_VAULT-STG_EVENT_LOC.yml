@@ -28,12 +28,15 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 2afad569-7a67-4385-ad5c-2c21f3d0b9af
-                stepCounter: ebd6f24a-8654-4f82-8aa6-38aced9b332f
+              - columnCounter: 9cf72fa6-bd14-432b-8173-d879fafb3830
+                stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
             transform: ""
-      - appliedColumnTests: {}
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
         columnReference:
-          columnCounter: 7c2d6aec-b65d-4782-98c8-4dc682423940
+          columnCounter: eb837523-0c64-4cde-82b9-7c2dd9713d95
           stepCounter: 54cdbece-e19c-4508-bd45-157962b1dedb
         config: {}
         dataType: STRING

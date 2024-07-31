@@ -1,0 +1,162 @@
+fileVersion: 1
+id: 4041da85-f362-4f8d-b271-5244703b5f69
+name: EVENT_VW
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW_VAULT
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 276fe3fd-bbcc-4a76-a92f-1737e14adbc6
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cf72fa6-bd14-432b-8173-d879fafb3830
+                stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4445def-83a8-4e3a-b1cb-0e13b1f52ba1
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_CLIENT_PROGRAM_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 799441d0-66a6-4ff7-9e41-e99607634a20
+                stepCounter: 05316387-ab45-43d4-b977-cc444c950eba
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ad437f9-0361-4e89-a0dd-b3cd4fbb7f70
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eebcb589-c939-4dc4-9d7a-53cd7a1e59cc
+                stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9852342-770a-4b91-a553-2a4408140323
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CAUSE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fb51c745-da7d-4d5a-98c5-673899336f0f
+                stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 680cf226-7cca-46d6-be1b-910d0d1bb4a0
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38)
+        description: ""
+        name: EVENT_DT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93cf80a4-9c25-492c-bcc4-3fe9e9e78878
+                stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1799efc-83dd-4b7b-a141-319b55292204
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_TYPE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5a6639ed-df53-4534-8381-a6182cd9f38e
+                stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef41c286-e11a-406d-8dbd-66debbd67dda
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_STS_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79227718-517a-45e4-a915-173f11011875
+                stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f3aba3a-80cd-4691-9239-4635b0b35a1f
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EVENT_NUM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fe0f0608-0a7b-4a76-ba86-e187e87e3d6d
+                stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73250cd2-cd7b-41f1-8cec-315691c3dfd4
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_IND_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22c45c4c-4629-475f-9510-da2abfe06e0e
+                stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_VAULT
+            nodeName: HUB_EVENT
+        join:
+          joinCondition: FROM {{ ref('RAW_VAULT', 'HUB_EVENT') }} "HUB_EVENT"
+        name: EVENT_VW
+        noLinkRefs: []
+  name: EVENT_VW
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
