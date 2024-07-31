@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
-name: SATV1_SAT_EVENT_LOC
+name: SAT_EVENT_LOC_VW
 operation:
   config:
     postSQL: ""
@@ -211,9 +211,9 @@ operation:
             nodeName: SAT_EVENT_LOC
         join:
           joinCondition: FROM {{ ref('RAW_VAULT', 'SAT_EVENT_LOC') }} "SAT_EVENT_LOC"
-        name: SATV1_SAT_EVENT_LOC
+        name: SAT_EVENT_LOC_VW
         noLinkRefs: []
-  name: SATV1_SAT_EVENT_LOC
+  name: SAT_EVENT_LOC_VW
   overrideSQL: false
   schema: ""
   sqlType: "9"

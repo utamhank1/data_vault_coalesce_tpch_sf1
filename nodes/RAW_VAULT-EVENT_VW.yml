@@ -140,17 +140,133 @@ operation:
               - columnCounter: 22c45c4c-4629-475f-9510-da2abfe06e0e
                 stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
             transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2bb79d7f-6e9b-4620-8584-772dc72a5f4b
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LOC_TYPE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dbd979d2-f859-4168-bdbe-851ad04be5f7
+                stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a1e438e-94d1-4b61-9e51-03804f77352e
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRIMARY_LOC_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f90ae9ba-9e02-4611-b9b5-b08a1c5a1cc2
+                stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 78acc36e-ca45-489d-a629-8397352869ac
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ZIP_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e443e118-9166-42ba-ae87-1d014c1dd3a3
+                stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a9a28b4-c4fa-45e1-bb8d-4d5c16de938d
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CNTRY_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b36b8bde-4eeb-470d-8485-402dc6389f74
+                stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc40b440-3575-4aab-a76f-96d2cb545445
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DEPT_EID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a873c1a-039d-4a6d-9404-693b1185ee08
+                stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7bf3d10-23d8-49ae-b078-22d1b4ac6348
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: COUNTY_OF_INJURY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac2eb27c-6910-4a11-912d-1c53befa1544
+                stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 136efaba-8889-4fef-b188-3aab1b1a7275
+          stepCounter: 4041da85-f362-4f8d-b271-5244703b5f69
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9699900e-15ae-47c0-a811-8da0630406ad
+                stepCounter: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          HUB_EVENT: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+          LINK_EVENT_CLIENT_PRGM: 05316387-ab45-43d4-b977-cc444c950eba
+          SAT_EVENT_LOC_VW: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+          SAT_EVENT_VW: eef96687-560f-4df9-b2a2-9778f7ade433
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: RAW_VAULT
             nodeName: HUB_EVENT
+          - locationName: RAW_VAULT
+            nodeName: LINK_EVENT_CLIENT_PRGM
+          - locationName: RAW_VAULT
+            nodeName: SAT_EVENT_LOC_VW
+          - locationName: RAW_VAULT
+            nodeName: SAT_EVENT_VW
         join:
-          joinCondition: FROM {{ ref('RAW_VAULT', 'HUB_EVENT') }} "HUB_EVENT"
+          joinCondition: |-
+            FROM {{ ref('RAW_VAULT', 'SAT_EVENT_VW') }} "SAT_EVENT_VW"
+            INNER JOIN {{ ref('RAW_VAULT', 'HUB_EVENT') }} "HUB_EVENT"
+            ON "SAT_EVENT_VW"."HK_EVENT_ID" = "HUB_EVENT"."HK_EVENT_ID"
+            INNER JOIN {{ ref('RAW_VAULT', 'LINK_EVENT_CLIENT_PRGM') }} "LINK_EVENT_CLIENT_PRGM"
+            ON "LINK_EVENT_CLIENT_PRGM"."HK_EVENT_ID" = "HUB_EVENT"."HK_EVENT_ID"
+            INNER JOIN {{ ref('RAW_VAULT', 'SAT_EVENT_LOC_VW') }} "SAT_EVENT_LOC_VW"
+            ON "HUB_EVENT"."HK_EVENT_ID" = "SAT_EVENT_LOC_VW"."HK_EVENT_ID"
+            WHERE "SAT_EVENT_LOC_VW"."IS_CURRENT" = 1 AND "SAT_EVENT_VW"."IS_CURRENT" = 1
         name: EVENT_VW
         noLinkRefs: []
   name: EVENT_VW
