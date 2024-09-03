@@ -1,0 +1,156 @@
+fileVersion: 1
+id: 1d6d9b13-81ef-444d-9aab-0aa0d192e50e
+name: V_SAT_EVENT_LOC_VW
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW_VAULT
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fbaa6bd6-e861-4937-a952-6162b82681a0
+          stepCounter: 1d6d9b13-81ef-444d-9aab-0aa0d192e50e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: HK_EVENT_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aecc216c-17bc-47ef-b5e7-33ef906843c4
+          stepCounter: 1d6d9b13-81ef-444d-9aab-0aa0d192e50e
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SDTS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 317d60f3-2d18-480e-a470-b12e388bb792
+          stepCounter: 1d6d9b13-81ef-444d-9aab-0aa0d192e50e
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: HK_EVENT_S
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6d91366-b5f1-41a3-9e05-5a95396c62fa
+          stepCounter: 1d6d9b13-81ef-444d-9aab-0aa0d192e50e
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: LDTS_EVENT_S
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: |-
+            {{ stage('Override Create SQL') }}
+            	CREATE OR REPLACE VIEW {{ ref('RAW_VAULT', 'V_SAT_EVENT_LOC_VW')}} AS (
+            	
+            	WITH snapshot_data AS (
+                SELECT "SDTS"
+                FROM "JJ_DEV"."JJ_DEV_CRAWFORD_PIT_REPLICATION_SRC"."SNAPSHOTV1_NODE"
+                WHERE "IS_ACTIVE" = true
+            ),
+            event_data AS (
+                SELECT 
+                    h."HK_EVENT_ID",
+                    s."SDTS",
+                    e."LDTS" AS "LDTS_EVENT_S",
+                    e."LEDTS" AS "LEDTS_EVENT_S"
+                FROM "JJ_DEV"."JJ_DEV_CRAWFORD_PIT_REPLICATION_SRC"."HUB_EVENT" h
+                CROSS JOIN snapshot_data s
+                LEFT JOIN "JJ_DEV"."JJ_DEV_CRAWFORD_PIT_REPLICATION_SRC"."SAT_EVENT_VW" e
+                    ON h."HK_EVENT_ID" = e."HK_EVENT_ID"
+                    AND s."SDTS" >= e."LDTS"
+                    AND s."SDTS" < e."LEDTS"
+            )
+            SELECT 
+                COALESCE(ed."HK_EVENT_ID", '00000000000000000000000000000000') AS "HK_EVENT_ID",
+                ed."SDTS",
+                COALESCE(ed."HK_EVENT_ID", '00000000000000000000000000000000') AS "HK_EVENT_S",
+                COALESCE(ed."LDTS_EVENT_S", TO_TIMESTAMP('0001-01-01T00:00:01', 'YYYY-MM-DDTHH24:MI:SS')) AS "LDTS_EVENT_S"
+            FROM event_data ed
+            ORDER BY ed."SDTS", ed."HK_EVENT_ID", ed."LDTS_EVENT_S"
+            		
+            )
+
+            added overwrite create sql view node to generate a PIT view returning multiple LDTS values for each SDTS.
+        dependencies:
+          - locationName: RAW_VAULT
+            nodeName: HUB_EVENT
+          - locationName: RAW_VAULT
+            nodeName: SAT_EVENT_LOC_VW
+          - locationName: RAW_VAULT
+            nodeName: SAT_EVENT_VW
+          - locationName: RAW_VAULT
+            nodeName: SNAPSHOTV1_NODE
+        join:
+          joinCondition: |-
+            FROM {{ ref('RAW_VAULT', 'SAT_EVENT_LOC_VW') }} "SAT_EVENT_LOC_VW"
+
+            {{ ref_link('RAW_VAULT', 'V_SAT_EVENT_LOC_VW') }} 
+            {{ ref_link('RAW_VAULT', 'SNAPSHOTV1_NODE') }}
+            {{ ref_link('RAW_VAULT', 'SAT_EVENT_VW') }}
+            {{ ref_link('RAW_VAULT', 'HUB_EVENT') }}
+        name: V_SAT_EVENT_LOC_VW
+        noLinkRefs: []
+  name: V_SAT_EVENT_LOC_VW
+  overrideSQL: true
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

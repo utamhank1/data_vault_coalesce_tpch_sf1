@@ -5,7 +5,7 @@ operation:
   config:
     daily_snapshot_duration: "30"
     daily_snapshot_unit: DAY
-    daily_snapshots_forever: false
+    daily_snapshots_forever: true
     monthly_snapshot_duration: "3"
     monthly_snapshot_unit: YEAR
     monthly_snapshots_forever: false

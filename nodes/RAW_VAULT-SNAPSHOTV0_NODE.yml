@@ -3,7 +3,8 @@ id: 171951fc-6848-4f0e-a9ee-e3d6766a9b91
 name: SNAPSHOTV0_NODE
 operation:
   config:
-    input_daily_snapshot_time: "07:00:00"
+    input_daily_snapshot_time: |
+      00:00:00
     input_snapshot_end_date: "2025-12-31"
     input_snapshot_start_date: "2020-01-01"
     postSQL: ""

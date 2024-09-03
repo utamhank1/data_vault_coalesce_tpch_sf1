@@ -1,0 +1,112 @@
+fileVersion: 1
+id: 8bf88223-8913-4c82-ac51-9b7f52b2ecb1
+name: PIT_NODE
+operation:
+  config:
+    cleanup_pit: true
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW_VAULT
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cce2c661-b8ab-460e-a67d-099cbde5aac4
+          stepCounter: 8bf88223-8913-4c82-ac51-9b7f52b2ecb1
+        config:
+          is_dimension_key: true
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cf72fa6-bd14-432b-8173-d879fafb3830
+                stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a866160-6a8e-461b-942e-0dcc7bda7919
+          stepCounter: 8bf88223-8913-4c82-ac51-9b7f52b2ecb1
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10208919-b843-48d3-ad06-d326206b18ee
+                stepCounter: ef3fee01-75e4-42c5-b369-2166e3920d5a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b80ef31e-355b-4f11-8d0b-b8517b33ebba
+          stepCounter: 8bf88223-8913-4c82-ac51-9b7f52b2ecb1
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_S
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 86f29921-3c45-412b-90f2-6f08b9f41abb
+                stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64f8d33e-8c77-4a37-80d1-04ebb46a74a9
+          stepCounter: 8bf88223-8913-4c82-ac51-9b7f52b2ecb1
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS_EVENT_S
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c2af4884-fca6-47e9-b206-1bc0eee6b98b
+                stepCounter: eef96687-560f-4df9-b2a2-9778f7ade433
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          HUB_EVENT: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+          SAT_EVENT_LOC_VW: 4e0ba438-1ec5-4bcb-99d2-d6a3c884d458
+          SAT_EVENT_VW: eef96687-560f-4df9-b2a2-9778f7ade433
+          SNAPSHOTV1_NODE: ef3fee01-75e4-42c5-b369-2166e3920d5a
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_VAULT
+            nodeName: HUB_EVENT
+          - locationName: RAW_VAULT
+            nodeName: SAT_EVENT_LOC_VW
+          - locationName: RAW_VAULT
+            nodeName: SAT_EVENT_VW
+          - locationName: RAW_VAULT
+            nodeName: SNAPSHOTV1_NODE
+        join:
+          joinCondition: |-
+            FROM {{ ref('RAW_VAULT', 'HUB_EVENT') }} "HUB_EVENT"
+            INNER JOIN {{ ref('RAW_VAULT', 'SAT_EVENT_VW') }} "SAT_EVENT_VW"
+            ON "HUB_EVENT"."HK_EVENT_ID" = "SAT_EVENT_VW"."HK_EVENT_ID"
+            INNER JOIN {{ ref('RAW_VAULT', 'SAT_EVENT_LOC_VW') }} "SAT_EVENT_LOC_VW"
+            ON "HUB_EVENT"."HK_EVENT_ID" = "SAT_EVENT_LOC_VW"."HK_EVENT_ID"
+            INNER JOIN {{ ref('RAW_VAULT', 'SNAPSHOTV1_NODE') }} "SNAPSHOTV1_NODE"
+            ON "SNAPSHOTV1_NODE"."IS_ACTIVE" = TRUE
+            AND "SNAPSHOTV1_NODE"."SDTS" BETWEEN "SAT_EVENT_VW"."LDTS" AND "SAT_EVENT_VW"."LEDTS"
+            AND "SNAPSHOTV1_NODE"."SDTS" BETWEEN "SAT_EVENT_LOC_VW"."LDTS" AND "SAT_EVENT_LOC_VW"."LEDTS"
+        name: PIT_NODE
+        noLinkRefs: []
+  name: PIT_NODE
+  overrideSQL: false
+  schema: ""
+  sqlType: "12"
+  type: sql
+  version: 1
+type: Node
