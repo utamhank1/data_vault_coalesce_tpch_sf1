@@ -5,9 +5,9 @@ metadata:
   defaultStorageLocation: null
   error: null
   nodeMetadataSpec: |-
-    capitalized: 'DATAVAULT BY SCALEFREE: SNAPSHOT V1'
-    short: 'SNAPSHOTV1'
-    plural: 'DATAVAULT BY SCALEFREE: SNAPSHOTS V1'
+    capitalized: 'DATAVAULT BY SCALEFREE: SNAPSHOT V1 HOURLY'
+    short: 'SNAPSHOTV1_HR'
+    plural: 'DATAVAULT BY SCALEFREE: SNAPSHOTS V1 HOURLY'
     tagColor: '#58D68D'
 
     config:

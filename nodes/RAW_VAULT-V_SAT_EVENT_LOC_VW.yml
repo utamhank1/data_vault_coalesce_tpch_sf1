@@ -101,7 +101,7 @@ operation:
             	
             	WITH snapshot_data AS (
                 SELECT "SDTS"
-                FROM "JJ_DEV"."JJ_DEV_CRAWFORD_PIT_REPLICATION_SRC"."SNAPSHOTV1_NODE"
+                FROM  {{ ref('RAW_VAULT', 'SNAPSHOTV1_NODE') }}
                 WHERE "IS_ACTIVE" = true
             ),
             event_data AS (
@@ -110,9 +110,9 @@ operation:
                     s."SDTS",
                     e."LDTS" AS "LDTS_EVENT_S",
                     e."LEDTS" AS "LEDTS_EVENT_S"
-                FROM "JJ_DEV"."JJ_DEV_CRAWFORD_PIT_REPLICATION_SRC"."HUB_EVENT" h
+                FROM {{ ref('RAW_VAULT', 'HUB_EVENT') }} h
                 CROSS JOIN snapshot_data s
-                LEFT JOIN "JJ_DEV"."JJ_DEV_CRAWFORD_PIT_REPLICATION_SRC"."SAT_EVENT_VW" e
+                LEFT JOIN {{ ref('RAW_VAULT', 'SAT_EVENT_VW') }} e
                     ON h."HK_EVENT_ID" = e."HK_EVENT_ID"
                     AND s."SDTS" >= e."LDTS"
                     AND s."SDTS" < e."LEDTS"
@@ -126,8 +126,6 @@ operation:
             ORDER BY ed."SDTS", ed."HK_EVENT_ID", ed."LDTS_EVENT_S"
             		
             )
-
-            added overwrite create sql view node to generate a PIT view returning multiple LDTS values for each SDTS.
         dependencies:
           - locationName: RAW_VAULT
             nodeName: HUB_EVENT

@@ -1,0 +1,5 @@
+defaultStorageMapping: RAW_VAULT
+fileVersion: 1
+locations:
+  - RAW_VAULT
+  - STG
