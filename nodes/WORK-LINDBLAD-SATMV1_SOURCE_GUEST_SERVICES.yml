@@ -1,0 +1,223 @@
+fileVersion: 1
+id: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+name: SATMV1_SOURCE_GUEST_SERVICES
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK-LINDBLAD
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b123726c-8bc9-4cb0-9e16-aa70c06cbe18
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HD_GUEST_SERVICES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d038e08-1817-4eae-83f9-eb3ebf4d661c
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5af0f3ed-a6b0-4868-8184-a1efde5b41a0
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config:
+          is_hk: true
+        dataType: STRING
+        description: ""
+        name: HK_GUEST_SERVICES_H
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 99f2623e-50bc-4d56-9610-6e2512b7917a
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa72c767-f49f-4f3f-8606-d1b9c3760311
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: SERVICE_LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9e62323b-8dd7-46a8-ace8-130c7fdf42a9
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4bf0a219-dc75-40da-819a-2d3ad76f7e0b
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: SERVICE_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2be7fac9-a821-41d3-baa8-68dc313068b6
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a108f1aa-5a9b-46b4-8a80-7303e711545c
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: SERVICE_RECORD_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2363b71c-7e98-4ca0-a21b-61dfba5aede4
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3cda75e5-113c-4bc6-a554-f361ac71c7c5
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: NUMBER(3,2)
+        description: ""
+        name: SERVICE_RATING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af010e83-be98-4db5-a0a8-6e58f2c0c44e
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0db85427-ebb2-4395-a964-ac0f24a39fb9
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: SERVICE_AVAILABILITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d7fdbc75-f590-4d27-a0a9-6bc98fd69cd0
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a8abb70-972e-4b07-92bd-b0b94d1adbd0
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IS_COMPLIMENTARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: accd177a-c457-4e30-8731-bb7f0f779abc
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a936b78-ecf0-46d1-a811-42bdae5806bd
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d1531158-3ca7-46fb-941b-b71decf93c8f
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c76b13b5-0756-471f-84d2-2879d40ac6ce
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9472cf0e-f3e1-42e5-9b5a-3dc20a4c1d89
+                stepCounter: ee1b56be-61c2-4ead-82f2-10d5575c395d
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1c3b1be8-d6e3-439b-a512-b7ec7ea053ef
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        is_system_ledts: true
+        name: LEDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |-
+              COALESCE(LEAD("{{ datavault4coalesce.config.ldts_alias }}" - INTERVAL '1 MICROSECOND') 
+              OVER (PARTITION BY "{{ get_value_by_column_attribute("is_hk") }}", "{{ get_source_ma_keys(delimiter=',') }}"  
+              ORDER BY "{{ datavault4coalesce.config.ldts_alias }}"), {{ datavault4coalesce__string_to_timestamp(datavault4coalesce.config.timestamp_format, datavault4coalesce.config.end_of_all_times) }})
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fcc51fd0-3409-4d01-8370-1cb3f440ef5c
+          stepCounter: 22f234fa-a23b-4bf5-80f0-d40cc00ecaf7
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        is_system_current_col: true
+        name: IS_CURRENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |-
+              CASE 
+                WHEN 
+                  LEAD("{{ datavault4coalesce.config.ldts_alias }}" - INTERVAL '1 MICROSECOND') 
+                  OVER (PARTITION BY "{{ get_value_by_column_attribute("is_hk") }}", "{{ get_source_ma_keys(delimiter=',') }}"
+                  ORDER BY "{{ datavault4coalesce.config.ldts_alias }}") IS NULL 
+                THEN TRUE 
+                ELSE FALSE 
+              END
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          SATMV0_SOURCE_GUEST_SERVICES: ee1b56be-61c2-4ead-82f2-10d5575c395d
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK-LINDBLAD
+            nodeName: SATMV0_SOURCE_GUEST_SERVICES
+        join:
+          joinCondition: FROM {{ ref('WORK-LINDBLAD', 'SATMV0_SOURCE_GUEST_SERVICES') }} "SATMV0_SOURCE_GUEST_SERVICES"
+        name: SATMV1_SOURCE_GUEST_SERVICES
+        noLinkRefs: []
+  name: SATMV1_SOURCE_GUEST_SERVICES
+  overrideSQL: false
+  schema: ""
+  sqlType: Scalefree-1-1-5:::21
+  type: sql
+  version: 1
+type: Node

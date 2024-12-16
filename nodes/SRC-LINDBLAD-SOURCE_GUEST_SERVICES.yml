@@ -1,0 +1,153 @@
+fileVersion: 1
+id: 167be9ab-e317-48a3-b371-81f3466bce0a
+name: SOURCE_GUEST_SERVICES
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC-LINDBLAD
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41eb6d31-6d3f-4abe-be3f-5567cd94a084
+          stepCounter: 167be9ab-e317-48a3-b371-81f3466bce0a
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: SERVICE_LOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dde064b-38fa-416c-8db2-eb9c7b6f8197
+          stepCounter: 167be9ab-e317-48a3-b371-81f3466bce0a
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: SERVICE_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb25f4c9-293e-4486-9ff6-c8d1e2618feb
+          stepCounter: 167be9ab-e317-48a3-b371-81f3466bce0a
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: SERVICE_RECORD_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f309a9be-7131-4cbb-a416-a9d491f87e42
+          stepCounter: 167be9ab-e317-48a3-b371-81f3466bce0a
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: SERVICE_AVAILABILITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8c39ecf-e481-4ecb-827f-fd0678b1500e
+          stepCounter: 167be9ab-e317-48a3-b371-81f3466bce0a
+        config: {}
+        dataType: NUMBER(3,2)
+        defaultValue: ""
+        description: ""
+        name: SERVICE_RATING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a87c19bd-5612-4966-9069-e8ed8ff606db
+          stepCounter: 167be9ab-e317-48a3-b371-81f3466bce0a
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IS_COMPLIMENTARY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a70dc68a-b32f-4a8f-beaa-663f2241ea32
+          stepCounter: 167be9ab-e317-48a3-b371-81f3466bce0a
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: SERVICE_LOCATION_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC-LINDBLAD', 'SOURCE_GUEST_SERVICES') }}
+  name: SOURCE_GUEST_SERVICES
+  schema: ""
+  sqlType: Source
+  table: SOURCE_GUEST_SERVICES
+  type: sourceInput
+  version: 1
+type: Node

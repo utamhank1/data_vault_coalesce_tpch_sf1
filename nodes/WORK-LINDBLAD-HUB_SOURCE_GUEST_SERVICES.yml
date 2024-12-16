@@ -1,0 +1,95 @@
+fileVersion: 1
+id: 27cbd9b3-fc52-41e6-ae03-612b2d4da488
+name: HUB_SOURCE_GUEST_SERVICES
+operation:
+  config:
+    disable_hwm: true
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK-LINDBLAD
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ff69f21-8dd5-4f0a-937a-4221919396de
+          stepCounter: 27cbd9b3-fc52-41e6-ae03-612b2d4da488
+        config:
+          is_Hub_hk: true
+        dataType: STRING
+        description: ""
+        name: HK_GUEST_SERVICES_H
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4358faee-dffe-45d5-a904-40c29c94249d
+                stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08c6ed5c-82f7-4602-b380-1308dfea9bce
+          stepCounter: 27cbd9b3-fc52-41e6-ae03-612b2d4da488
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: SERVICE_LOCATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f5782b95-6384-4370-a35a-6b7500647d4f
+                stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11fb8ac8-6e21-47c0-82b8-e7ed997b0222
+          stepCounter: 27cbd9b3-fc52-41e6-ae03-612b2d4da488
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3866499b-5ad8-4de3-938a-e5df6de80840
+                stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5fbc6b09-420b-4f9a-b02f-b142855b01e9
+          stepCounter: 27cbd9b3-fc52-41e6-ae03-612b2d4da488
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79cbe0c2-ae59-436d-a44b-8b48a54aca55
+                stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK-LINDBLAD
+            nodeName: DVSTG_SOURCE_GUEST_SERVICES
+        join:
+          joinCondition: FROM {{ ref('WORK-LINDBLAD', 'DVSTG_SOURCE_GUEST_SERVICES') }} "DVSTG_SOURCE_GUEST_SERVICES"
+        name: HUB_SOURCE_GUEST_SERVICES
+        noLinkRefs: []
+  name: HUB_SOURCE_GUEST_SERVICES
+  overrideSQL: false
+  schema: ""
+  sqlType: Scalefree-1-1-5:::6
+  type: sql
+  version: 1
+type: Node

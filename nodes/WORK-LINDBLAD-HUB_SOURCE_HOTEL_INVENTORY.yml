@@ -1,0 +1,95 @@
+fileVersion: 1
+id: 4ef1c886-9a20-474a-a2fe-754bbd2c3bd6
+name: HUB_SOURCE_HOTEL_INVENTORY
+operation:
+  config:
+    disable_hwm: true
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK-LINDBLAD
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 689fa127-5712-4e33-8343-dbc6023bee96
+          stepCounter: 4ef1c886-9a20-474a-a2fe-754bbd2c3bd6
+        config:
+          is_Hub_hk: true
+        dataType: STRING
+        description: ""
+        name: HK_HOTEL_H
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a514c312-1913-4ef1-a2bc-508b55f847d0
+                stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6a11513-fd83-45d3-9301-8a52a0ed53c3
+          stepCounter: 4ef1c886-9a20-474a-a2fe-754bbd2c3bd6
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: HOTEL_ROOM_TYPE_HOTEL_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d6abcb3-2d2d-4aea-b96b-9c4fced02424
+                stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14eef79d-09aa-462b-a230-2fd85c93a8f8
+          stepCounter: 4ef1c886-9a20-474a-a2fe-754bbd2c3bd6
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2f7664b8-23f2-4234-9309-96a159bac964
+                stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: acfc9a7c-9daa-492f-ba59-33d051fd8447
+          stepCounter: 4ef1c886-9a20-474a-a2fe-754bbd2c3bd6
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5596006a-3c67-482f-8bc6-85e9d7a8b730
+                stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK-LINDBLAD
+            nodeName: DVSTG_SOURCE_HOTEL_INVENTORY
+        join:
+          joinCondition: FROM {{ ref('WORK-LINDBLAD', 'DVSTG_SOURCE_HOTEL_INVENTORY') }} "DVSTG_SOURCE_HOTEL_INVENTORY"
+        name: HUB_SOURCE_HOTEL_INVENTORY
+        noLinkRefs: []
+  name: HUB_SOURCE_HOTEL_INVENTORY
+  overrideSQL: false
+  schema: ""
+  sqlType: Scalefree-1-1-5:::6
+  type: sql
+  version: 1
+type: Node

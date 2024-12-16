@@ -1,0 +1,7 @@
+defaultStorageMapping: WORK
+fileVersion: 1
+locations:
+  - SRC
+  - SRC-LINDBLAD
+  - WORK
+  - WORK-LINDBLAD

@@ -1,0 +1,153 @@
+fileVersion: 1
+id: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+name: SOURCE_HOTEL_INVENTORY
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC-LINDBLAD
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9dc0de4b-98f5-49fa-8917-aaedfa9feac0
+          stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: HOTEL_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 963c5935-dacf-4b61-8f08-d403398a6742
+          stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: HOTEL_ROOM_TYPE_HOTEL_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2cd7e88-a654-4c27-84ba-f8e4ff459ab1
+          stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: ROOM_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bae15299-8903-41bb-b760-cfd543192bac
+          stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: HOTEL_ROOM_TYPE_RECORD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bce9c3f9-d999-49e6-9b9f-61490ee08cf3
+          stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: OCCUPANCY_STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26f5272d-d9d9-41d4-9e19-1c1db4f49af1
+          stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LAST_RENOVATION_YEAR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff425c19-1f0c-4a31-b6a7-459213921d7b
+          stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IS_ACTIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC-LINDBLAD', 'SOURCE_HOTEL_INVENTORY') }}
+  name: SOURCE_HOTEL_INVENTORY
+  schema: ""
+  sqlType: Source
+  table: SOURCE_HOTEL_INVENTORY
+  type: sourceInput
+  version: 1
+type: Node

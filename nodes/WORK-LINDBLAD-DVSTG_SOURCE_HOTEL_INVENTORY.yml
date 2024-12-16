@@ -1,0 +1,216 @@
+fileVersion: 1
+id: 097cce4b-7280-493d-9512-d5878cc3b649
+name: DVSTG_SOURCE_HOTEL_INVENTORY
+operation:
+  config:
+    contains_multiactive_data: true
+    generate_ghost_records: true
+    main_hk_col:
+      columnCounter: a514c312-1913-4ef1-a2bc-508b55f847d0
+      stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK-LINDBLAD
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a514c312-1913-4ef1-a2bc-508b55f847d0
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config:
+          is_hk: true
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 7d6abcb3-2d2d-4aea-b96b-9c4fced02424
+            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        name: HK_HOTEL_H
+        nullable: true
+        sourceColumnReferences: []
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6d14f56-9800-4648-8118-d9454ca30b2a
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config:
+          is_hd: true
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 9ee50b32-ac7f-4207-bd78-f6f9f4129d27
+            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+          - columnCounter: 4ca4dfac-e235-4fda-b77a-9d86c617a9bf
+            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+          - columnCounter: a0fba49c-ea83-42c9-9810-f0749b4d34f3
+            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        name: HD_HOTEL_INVENTORY
+        nullable: true
+        sourceColumnReferences: []
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d6abcb3-2d2d-4aea-b96b-9c4fced02424
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: HOTEL_ROOM_TYPE_HOTEL_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 963c5935-dacf-4b61-8f08-d403398a6742
+                stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0161a2f2-c180-4dc3-b4ce-4f4d644fcebb
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: HOTEL_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9dc0de4b-98f5-49fa-8917-aaedfa9feac0
+                stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ee50b32-ac7f-4207-bd78-f6f9f4129d27
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: ROOM_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e2cd7e88-a654-4c27-84ba-f8e4ff459ab1
+                stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff357b2b-dec7-4c36-b228-68cf0d840b11
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config:
+          multi_active_key: true
+        dataType: VARCHAR(50)
+        description: ""
+        name: HOTEL_ROOM_TYPE_RECORD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bae15299-8903-41bb-b760-cfd543192bac
+                stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ca4dfac-e235-4fda-b77a-9d86c617a9bf
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: OCCUPANCY_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bce9c3f9-d999-49e6-9b9f-61490ee08cf3
+                stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0fba49c-ea83-42c9-9810-f0749b4d34f3
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LAST_RENOVATION_YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 26f5272d-d9d9-41d4-9e19-1c1db4f49af1
+                stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79e6e3c7-48dc-4613-ba2e-9e22a3555cee
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IS_ACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ff425c19-1f0c-4a31-b6a7-459213921d7b
+                stepCounter: 1660bbfd-6f48-4f05-8fc7-c725fd04d37e
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f7664b8-23f2-4234-9309-96a159bac964
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        is_system_ldts: true
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: SYSDATE()
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5596006a-3c67-482f-8bc6-85e9d7a8b730
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The Record Source (RSRC) describes the source of this data.
+        is_system_rsrc: true
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{record_source()}}"
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC-LINDBLAD
+            nodeName: SOURCE_HOTEL_INVENTORY
+        join:
+          joinCondition: FROM {{ ref('SRC-LINDBLAD', 'SOURCE_HOTEL_INVENTORY') }} "SOURCE_HOTEL_INVENTORY"
+        name: DVSTG_SOURCE_HOTEL_INVENTORY
+        noLinkRefs: []
+  name: DVSTG_SOURCE_HOTEL_INVENTORY
+  overrideSQL: false
+  schema: ""
+  sqlType: Scalefree-1-1-5:::4
+  type: sql
+  version: 1
+type: Node
