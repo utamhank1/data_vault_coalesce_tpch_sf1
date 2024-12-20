@@ -37,30 +37,6 @@ operation:
         name: HK_HOTEL_H
         nullable: true
         sourceColumnReferences: []
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: e6d14f56-9800-4648-8118-d9454ca30b2a
-          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
-        config:
-          is_hd: true
-        dataType: STRING
-        defaultValue: ""
-        description: ""
-        hashDetails:
-          hashAlgorithm: SHA1
-        hashedColumns:
-          - columnCounter: 9ee50b32-ac7f-4207-bd78-f6f9f4129d27
-            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
-          - columnCounter: 4ca4dfac-e235-4fda-b77a-9d86c617a9bf
-            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
-          - columnCounter: a0fba49c-ea83-42c9-9810-f0749b4d34f3
-            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
-        name: HD_HOTEL_INVENTORY
-        nullable: true
-        sourceColumnReferences: []
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7d6abcb3-2d2d-4aea-b96b-9c4fced02424
@@ -194,6 +170,30 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: "{{record_source()}}"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6d14f56-9800-4648-8118-d9454ca30b2a
+          stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        config:
+          is_hd: true
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 9ee50b32-ac7f-4207-bd78-f6f9f4129d27
+            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+          - columnCounter: 4ca4dfac-e235-4fda-b77a-9d86c617a9bf
+            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+          - columnCounter: a0fba49c-ea83-42c9-9810-f0749b4d34f3
+            stepCounter: 097cce4b-7280-493d-9512-d5878cc3b649
+        name: HD_HOTEL_INVENTORY
+        nullable: true
+        sourceColumnReferences: []
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -210,7 +210,7 @@ operation:
   name: DVSTG_SOURCE_HOTEL_INVENTORY
   overrideSQL: false
   schema: ""
-  sqlType: Scalefree-1-1-5:::4
+  sqlType: "117"
   type: sql
   version: 1
 type: Node

@@ -1,88 +1,26 @@
 fileVersion: 1
-id: cab73fe8-84a7-406c-8788-1c7232d01d7d
+id: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
 name: DVSTG_SOURCE_GUEST_SERVICES
 operation:
   config:
     contains_multiactive_data: true
     generate_ghost_records: true
     main_hk_col:
-      columnCounter: 4358faee-dffe-45d5-a904-40c29c94249d
-      stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+      columnCounter: f716ee55-ac46-4184-bc2d-e51ec6f97c9e
+      stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
   database: ""
   deployEnabled: true
   description: ""
   isMultisource: false
-  locationName: WORK-LINDBLAD
+  locationName: WORK
   materializationType: view
   metadata:
     appliedNodeTests: []
     columns:
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 4358faee-dffe-45d5-a904-40c29c94249d
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
-        config:
-          is_hk: true
-        dataType: STRING
-        defaultValue: ""
-        description: ""
-        hashDetails:
-          hashAlgorithm: SHA1
-        hashedColumns:
-          - columnCounter: f5782b95-6384-4370-a35a-6b7500647d4f
-            stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
-        name: HK_GUEST_SERVICES_H
-        nullable: true
-        sourceColumnReferences: []
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 18e20882-b54c-4448-ab90-3fdc6fc414c8
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
-        config:
-          is_hd: true
-        dataType: STRING
-        defaultValue: ""
-        description: ""
-        hashDetails:
-          hashAlgorithm: SHA1
-        hashedColumns:
-          - columnCounter: 46b0553d-823a-4113-ba40-f3ed41c4f01f
-            stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
-          - columnCounter: 4df499f7-0910-41c1-9ad4-6b15913f18a6
-            stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
-          - columnCounter: 6834c9a5-ef13-4c4b-a4f6-18b233c6a46b
-            stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
-          - columnCounter: 3a09a82b-8b48-4278-9563-080a20bdc181
-            stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
-          - columnCounter: 12273676-b372-426b-ba0f-81cc885c174f
-            stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
-        name: HD_GUEST_SERVICES
-        nullable: true
-        sourceColumnReferences: []
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f5782b95-6384-4370-a35a-6b7500647d4f
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
-        config: {}
-        dataType: VARCHAR(50)
-        description: ""
-        name: SERVICE_LOCATION_ID
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: a70dc68a-b32f-4a8f-beaa-663f2241ea32
-                stepCounter: 167be9ab-e317-48a3-b371-81f3466bce0a
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 46b0553d-823a-4113-ba40-f3ed41c4f01f
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+          columnCounter: 1eaa27ec-0aed-4c72-be34-5e78b2c327fb
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
         config: {}
         dataType: VARCHAR(100)
         description: ""
@@ -95,8 +33,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 4df499f7-0910-41c1-9ad4-6b15913f18a6
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+          columnCounter: d2b64cdf-083e-4c4d-9002-cce794f70233
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
         config: {}
         dataType: VARCHAR(50)
         description: ""
@@ -109,8 +47,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 36ce6e97-6300-4e92-960c-0add704dc3dc
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+          columnCounter: 0f110a63-da83-4f5b-806d-e59f16b882a9
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
         config:
           multi_active_key: true
         dataType: VARCHAR(50)
@@ -124,8 +62,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 6834c9a5-ef13-4c4b-a4f6-18b233c6a46b
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+          columnCounter: 32cd51c9-4617-4af9-a7d2-7d22dafcfb57
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
         config: {}
         dataType: VARCHAR(20)
         description: ""
@@ -138,8 +76,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3a09a82b-8b48-4278-9563-080a20bdc181
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+          columnCounter: d3d066bc-1735-4263-ad94-169dd5ba8927
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
         config: {}
         dataType: NUMBER(3,2)
         description: ""
@@ -152,8 +90,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 12273676-b372-426b-ba0f-81cc885c174f
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+          columnCounter: 1a019624-730e-4665-9ad0-9b740ce9b670
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
         config: {}
         dataType: BOOLEAN
         description: ""
@@ -169,8 +107,28 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 3866499b-5ad8-4de3-938a-e5df6de80840
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+          columnCounter: f716ee55-ac46-4184-bc2d-e51ec6f97c9e
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+        config:
+          is_hk: true
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: d4f4a5e5-eaa7-4277-83fa-0a008590ab97
+            stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+        name: HK_GUEST_SERVICES_H
+        nullable: true
+        sourceColumnReferences: []
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 785f101a-70f1-4ee8-bc06-7808012174dd
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -186,8 +144,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 79cbe0c2-ae59-436d-a44b-8b48a54aca55
-          stepCounter: cab73fe8-84a7-406c-8788-1c7232d01d7d
+          columnCounter: 5bb1d1fd-57b1-4b87-b53c-5201116c4e0b
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
         config: {}
         dataType: STRING
         defaultValue: ""
@@ -198,6 +156,50 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: "{{record_source()}}"
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4f4a5e5-eaa7-4277-83fa-0a008590ab97
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: SERVICE_LOCATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a70dc68a-b32f-4a8f-beaa-663f2241ea32
+                stepCounter: 167be9ab-e317-48a3-b371-81f3466bce0a
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7fdbdb9-d7e7-4ae8-8e48-fd67f8a8de5c
+          stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+        config:
+          is_hd: true
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 1a019624-730e-4665-9ad0-9b740ce9b670
+            stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+          - columnCounter: 1eaa27ec-0aed-4c72-be34-5e78b2c327fb
+            stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+          - columnCounter: d2b64cdf-083e-4c4d-9002-cce794f70233
+            stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+          - columnCounter: 0f110a63-da83-4f5b-806d-e59f16b882a9
+            stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+          - columnCounter: 32cd51c9-4617-4af9-a7d2-7d22dafcfb57
+            stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+          - columnCounter: d3d066bc-1735-4263-ad94-169dd5ba8927
+            stepCounter: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
+        name: HD_GUEST_SERVICES
+        nullable: true
+        sourceColumnReferences: []
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -214,7 +216,7 @@ operation:
   name: DVSTG_SOURCE_GUEST_SERVICES
   overrideSQL: false
   schema: ""
-  sqlType: Scalefree-1-1-5:::4
+  sqlType: "117"
   type: sql
   version: 1
 type: Node

@@ -91,7 +91,8 @@ operation:
         columnReference:
           columnCounter: c713f55d-8897-42c0-b55d-9a7403195447
           stepCounter: 7c5051f9-9c57-476d-9b1d-6a48d5c1f4e6
-        config: {}
+        config:
+          is_ma_key: true
         dataType: VARCHAR(20)
         description: ""
         name: OCCUPANCY_STATUS
@@ -173,7 +174,7 @@ operation:
   name: SATMV0_SOURCE_HOTEL_INVENTORY
   overrideSQL: false
   schema: ""
-  sqlType: "18"
+  sqlType: "116"
   type: sql
   version: 1
 type: Node

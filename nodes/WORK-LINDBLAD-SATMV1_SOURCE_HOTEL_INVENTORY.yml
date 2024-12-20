@@ -16,35 +16,6 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 863b7b24-d117-49da-a7bf-369601c9765f
-          stepCounter: 3d619fe2-f9f7-4636-b6b3-ce60d62ec526
-        config:
-          is_hk: true
-        dataType: STRING
-        description: ""
-        name: HK_HOTEL_H
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: a79c8693-aa13-43c8-a079-7c213e50cfe3
-                stepCounter: 7c5051f9-9c57-476d-9b1d-6a48d5c1f4e6
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 898d74db-0caf-4741-ace7-b9c4088c14bf
-          stepCounter: 3d619fe2-f9f7-4636-b6b3-ce60d62ec526
-        config: {}
-        dataType: STRING
-        description: ""
-        name: HD_HOTEL_INVENTORY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 7d789c17-8866-45c1-ad3f-19c7d4ae083b
-                stepCounter: 7c5051f9-9c57-476d-9b1d-6a48d5c1f4e6
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: e984c1a5-9aa3-4c08-aa57-2570d7a0062d
           stepCounter: 3d619fe2-f9f7-4636-b6b3-ce60d62ec526
         config: {}
@@ -200,6 +171,35 @@ operation:
                 THEN TRUE 
                 ELSE FALSE 
               END
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 898d74db-0caf-4741-ace7-b9c4088c14bf
+          stepCounter: 3d619fe2-f9f7-4636-b6b3-ce60d62ec526
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HD_HOTEL_INVENTORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d789c17-8866-45c1-ad3f-19c7d4ae083b
+                stepCounter: 7c5051f9-9c57-476d-9b1d-6a48d5c1f4e6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 863b7b24-d117-49da-a7bf-369601c9765f
+          stepCounter: 3d619fe2-f9f7-4636-b6b3-ce60d62ec526
+        config:
+          is_hk: true
+        dataType: STRING
+        description: ""
+        name: HK_HOTEL_H
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a79c8693-aa13-43c8-a079-7c213e50cfe3
+                stepCounter: 7c5051f9-9c57-476d-9b1d-6a48d5c1f4e6
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

@@ -76,14 +76,15 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          DVSTG_SOURCE_GUEST_SERVICES: 06b6444e-866d-42af-abe7-06ceb8ccdfb4
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: WORK-LINDBLAD
+          - locationName: WORK
             nodeName: DVSTG_SOURCE_GUEST_SERVICES
         join:
-          joinCondition: FROM {{ ref('WORK-LINDBLAD', 'DVSTG_SOURCE_GUEST_SERVICES') }} "DVSTG_SOURCE_GUEST_SERVICES"
+          joinCondition: FROM {{ ref('WORK', 'DVSTG_SOURCE_GUEST_SERVICES') }}
         name: HUB_SOURCE_GUEST_SERVICES
         noLinkRefs: []
   name: HUB_SOURCE_GUEST_SERVICES
