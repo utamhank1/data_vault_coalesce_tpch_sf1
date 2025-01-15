@@ -226,7 +226,7 @@ operation:
   name: SATV1_CUSTOMER
   overrideSQL: false
   schema: ""
-  sqlType: "9"
+  sqlType: data-vault-115:::9
   type: sql
   version: 1
 type: Node

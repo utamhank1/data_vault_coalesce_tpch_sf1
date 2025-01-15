@@ -1,0 +1,109 @@
+fileVersion: 1
+id: 0aa139f8-8feb-4216-abbc-f7859938040d
+name: PIT_CUSTOMER_NODE_CUSTOMER
+operation:
+  config:
+    cleanup_pit: true
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a415e148-5ec0-4052-b787-ad5fec7e61b9
+          stepCounter: 0aa139f8-8feb-4216-abbc-f7859938040d
+        config:
+          is_dimension_key: true
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 4aca0b07-9801-42e6-9190-c5b9ad188aa1
+            stepCounter: 0aa139f8-8feb-4216-abbc-f7859938040d
+          - columnCounter: c3164a51-afae-4802-a5eb-61efedabfc9d
+            stepCounter: 0aa139f8-8feb-4216-abbc-f7859938040d
+        name: HK_CUSTOMER_D
+        nullable: true
+        sourceColumnReferences: []
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4aca0b07-9801-42e6-9190-c5b9ad188aa1
+          stepCounter: 0aa139f8-8feb-4216-abbc-f7859938040d
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_CUSTOMER_H
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e982555e-0959-4cf0-bf83-f287894b2e58
+                stepCounter: ff18aa02-68bb-4331-8350-207514469acc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3164a51-afae-4802-a5eb-61efedabfc9d
+          stepCounter: 0aa139f8-8feb-4216-abbc-f7859938040d
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dd9faf51-0a7a-4856-a519-8ba7599993db
+                stepCounter: 38d9bd00-52b6-4907-99b0-bfff37e6950d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a2ee0c0-6447-4b1d-a711-c8964a6390c3
+          stepCounter: 0aa139f8-8feb-4216-abbc-f7859938040d
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_CUSTOMER_N_S
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f013f860-d698-453d-b93b-9d4a0b107ae2
+                stepCounter: 5115e60e-0b44-4a56-8af3-f22538f61ca6
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: HUB_CUSTOMER
+          - locationName: WORK
+            nodeName: SATV1_CUSTOMER
+          - locationName: WORK
+            nodeName: SNAPSHOTV1_NODE
+        join:
+          joinCondition: |-
+            FROM {{ ref('WORK', 'HUB_CUSTOMER') }} "HUB_CUSTOMER"
+            INNER JOIN {{ ref('WORK', 'SNAPSHOTV1_NODE') }} "SNAPSHOTV1_NODE"
+            ON "HUB_CUSTOMER"./*COLUMN*/ = "SNAPSHOTV1_NODE"./*COLUMN*/
+            INNER JOIN {{ ref('WORK', 'SATV1_CUSTOMER') }} "SATV1_CUSTOMER"
+            ON "HUB_CUSTOMER"./*COLUMN*/ = "SATV1_CUSTOMER"./*COLUMN*/
+        name: PIT_CUSTOMER_NODE_CUSTOMER
+        noLinkRefs: []
+  name: PIT_CUSTOMER_NODE_CUSTOMER
+  overrideSQL: false
+  schema: ""
+  sqlType: data-vault-115:::12
+  type: sql
+  version: 1
+type: Node
