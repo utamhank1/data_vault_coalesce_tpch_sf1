@@ -4,6 +4,18 @@ name: SAT_EVENT
 operation:
   config:
     disable_hwm: false
+    filters:
+      items:
+        - filterCol:
+            columnCounter: 93af14e2-47cb-452e-ba65-1875642914bf
+            stepCounter: 7526afce-a86d-4278-a250-288ee0538c72
+          filterEquality: "="
+          filterValue: "0"
+        - filterCol:
+            columnCounter: 7e88aca1-6371-40bf-8197-ff09894845ee
+            stepCounter: 7526afce-a86d-4278-a250-288ee0538c72
+          filterEquality: ">"
+          filterValue: "1"
     postSQL: ""
     preSQL: ""
     testsEnabled: true
@@ -198,7 +210,7 @@ operation:
   name: SAT_EVENT
   overrideSQL: false
   schema: ""
-  sqlType: "8"
+  sqlType: "118"
   type: sql
   version: 1
 type: Node

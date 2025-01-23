@@ -1,0 +1,92 @@
+fileVersion: 1
+id: d5da19ba-1f10-4a21-90a1-38c72f3c9069
+name: PIT_EVENT1
+operation:
+  config:
+    cleanup_pit: true
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW_VAULT
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc8a5f9c-23fb-4616-84c2-9ee395e55cc3
+          stepCounter: d5da19ba-1f10-4a21-90a1-38c72f3c9069
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cf72fa6-bd14-432b-8173-d879fafb3830
+                stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 225f64c3-afa7-4ec0-9628-4689640f7a45
+          stepCounter: d5da19ba-1f10-4a21-90a1-38c72f3c9069
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EVENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eebcb589-c939-4dc4-9d7a-53cd7a1e59cc
+                stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5166e92f-26e5-43ec-873a-60d620f69bc1
+          stepCounter: d5da19ba-1f10-4a21-90a1-38c72f3c9069
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 225b81d0-058a-4915-b7dc-649004efe0a5
+                stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f31d47d0-58a2-46b1-b980-e1cc40b673b3
+          stepCounter: d5da19ba-1f10-4a21-90a1-38c72f3c9069
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cd13c432-bdae-4694-8373-64f65c97fe2b
+                stepCounter: f4baf53a-cc54-4d30-b9c0-a022c3447d94
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_VAULT
+            nodeName: HUB_EVENT
+        join:
+          joinCondition: FROM {{ ref('RAW_VAULT', 'HUB_EVENT') }} "HUB_EVENT"
+        name: PIT_EVENT1
+        noLinkRefs: []
+  name: PIT_EVENT1
+  overrideSQL: false
+  schema: ""
+  sqlType: "12"
+  type: sql
+  version: 1
+type: Node

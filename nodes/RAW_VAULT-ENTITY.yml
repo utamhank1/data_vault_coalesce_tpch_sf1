@@ -5,7 +5,7 @@ operation:
   database: ""
   dataset: ""
   deployEnabled: true
-  description: null
+  description: ""
   locationName: RAW_VAULT
   metadata:
     columns:
@@ -2619,4 +2619,5 @@ operation:
   sqlType: Source
   table: ENTITY
   type: sourceInput
+  version: 1
 type: Node

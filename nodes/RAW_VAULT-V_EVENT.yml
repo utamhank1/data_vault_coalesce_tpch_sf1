@@ -1,0 +1,101 @@
+fileVersion: 1
+id: 473cda13-dc95-426a-b142-2002d467fc67
+name: V_EVENT
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW_VAULT
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d0bca65-5204-4057-a079-01bbdac95c4d
+          stepCounter: 473cda13-dc95-426a-b142-2002d467fc67
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_EVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8ec078c-5f78-4268-9e83-ab9530b9f56f
+                stepCounter: ee954ac7-bce5-4d8f-b5b0-9950342f36a9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 910c5f5f-8174-4390-b174-b001d1990105
+          stepCounter: 473cda13-dc95-426a-b142-2002d467fc67
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 961980ef-1f87-495d-8600-3e790e7e534b
+                stepCounter: ee954ac7-bce5-4d8f-b5b0-9950342f36a9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7be29d7f-ee98-4e38-8db3-f0a69a3dc2af
+          stepCounter: 473cda13-dc95-426a-b142-2002d467fc67
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HK_EVENT_S
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0e8f566d-914b-41f3-b5d4-e6fe0d9177f8
+                stepCounter: ee954ac7-bce5-4d8f-b5b0-9950342f36a9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4fc0803-5eeb-4e26-92f7-6cff47e31952
+          stepCounter: 473cda13-dc95-426a-b142-2002d467fc67
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5652c9c4-2a09-4901-b124-dce996d596ba
+                stepCounter: ee954ac7-bce5-4d8f-b5b0-9950342f36a9
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: |-
+            {{ stage('Override Create SQL') }}
+            	CREATE OR REPLACE VIEW {{ ref('RAW_VAULT', 'V_EVENT')}} AS (
+            		SELECT 
+             "HK_EVENT" AS "HK_EVENT",
+             "SDTS" AS "SDTS",
+             "HK_EVENT_S" AS "HK_EVENT_S",
+             "LDTS" AS "LDTS"
+             FROM {{ ref('RAW_VAULT', 'PIT_EVENT') }}
+            	)
+        dependencies:
+          - locationName: RAW_VAULT
+            nodeName: PIT_EVENT
+        join:
+          joinCondition: FROM {{ ref('RAW_VAULT', 'PIT_EVENT') }} "PIT_EVENT"
+        name: V_EVENT
+        noLinkRefs: []
+  name: V_EVENT
+  overrideSQL: true
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

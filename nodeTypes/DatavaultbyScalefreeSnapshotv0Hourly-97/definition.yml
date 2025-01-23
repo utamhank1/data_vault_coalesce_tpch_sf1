@@ -6,8 +6,8 @@ metadata:
   error: null
   nodeMetadataSpec: |-
     capitalized: 'DATAVAULT BY SCALEFREE: SNAPSHOT V0 HOURLY'
-    short: 'SNAPSHOTV0_HR'
-    plural: 'DATAVAULT BY SCALEFREE: SNAPSHOTS V0'
+    short: 'SNAPSHOTV0_HRLY'
+    plural: 'DATAVAULT BY SCALEFREE: SNAPSHOTS V0 HOURLY'
     tagColor: '#1E8449'
 
     config:
@@ -116,5 +116,5 @@ metadata:
       dataType: BOOLEAN
       placement: end
       attributeName: system_is_beginning_of_year
-name: "Copy of Datavault by Scalefree: Snapshot v0"
+name: "Datavault by Scalefree: Snapshot v0 Hourly"
 type: NodeType
