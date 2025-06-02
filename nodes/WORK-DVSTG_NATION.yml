@@ -70,7 +70,7 @@ operation:
         hashedColumns:
           - columnCounter: f5933d5c-d08f-47e7-ac9f-8fff88d0ee2c
             stepCounter: a673f4c4-afe6-4d73-a34e-201d0959ffcb
-        name: HK_REGION_H
+        name: HD_REGION_H
         nullable: true
         sourceColumnReferences: []
       - acceptedValues:
@@ -91,7 +91,7 @@ operation:
             stepCounter: a673f4c4-afe6-4d73-a34e-201d0959ffcb
           - columnCounter: 179b8ca1-9bcf-4217-a26e-5a56009b6fc3
             stepCounter: a673f4c4-afe6-4d73-a34e-201d0959ffcb
-        name: HK_NATION_N_S
+        name: HD_NATION_N_S
         nullable: true
         sourceColumnReferences: []
       - appliedColumnTests: {}

@@ -3,7 +3,6 @@ id: ef7fda61-5403-4b83-b862-f533a1c8fc4e
 name: SUPPLIER
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: Supplier data as defined by TPC-H
   locationName: SRC
@@ -114,12 +113,9 @@ operation:
         nullable: true
         primaryKey: false
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SRC', 'SUPPLIER') }}
   name: SUPPLIER
   schema: ""
   sqlType: Source
-  table: SUPPLIER
   type: sourceInput
   version: 1
 type: Node

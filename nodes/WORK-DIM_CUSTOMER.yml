@@ -3,7 +3,10 @@ id: 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
 name: DIM_CUSTOMER
 operation:
   config:
-    postSQL: ""
+    postSQL: |+
+      select 'Dropping table'
+
+
     preSQL: ""
     testsEnabled: true
   database: ""
@@ -197,7 +200,7 @@ operation:
           columnCounter: 3308c706-91de-4864-b189-d5043c492496
           stepCounter: 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
         config: {}
-        dataType: TIMESTAMP
+        dataType: NUMBER
         defaultValue: ""
         description: ""
         isSystemStartDate: true
