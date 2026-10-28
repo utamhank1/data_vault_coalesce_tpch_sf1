@@ -18,6 +18,22 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 61a62694-bba5-443d-aedf-e9076491c25d
+          stepCounter: 73206b0d-1c54-4dd6-b7d1-28badc224d5e
+        config:
+          is_Link_hk: true
+        dataType: STRING
+        description: ""
+        hashDetails: null
+        name: HK_PARTSUPP_SUPPLIER_L
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6613d5c-85ef-4d34-8fd6-d375b10c0958
+                stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: aed003bd-72b6-4f97-9239-3ea4a77d7561
           stepCounter: 73206b0d-1c54-4dd6-b7d1-28badc224d5e
         config: {}
@@ -44,22 +60,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 1a7a7003-8d8c-4fff-8354-3a662138c1e6
-                stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 61a62694-bba5-443d-aedf-e9076491c25d
-          stepCounter: 73206b0d-1c54-4dd6-b7d1-28badc224d5e
-        config:
-          is_Link_hk: true
-        dataType: STRING
-        description: ""
-        hashDetails: null
-        name: HK_PARTSUPP_SUPPLIER_L
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: f6613d5c-85ef-4d34-8fd6-d375b10c0958
                 stepCounter: a9e2faf9-9422-4dc2-b242-65bac3eb16be
             transform: ""
       - appliedColumnTests: {}
