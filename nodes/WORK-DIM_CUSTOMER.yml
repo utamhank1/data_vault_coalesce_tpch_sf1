@@ -18,10 +18,7 @@ operation:
   metadata:
     appliedNodeTests: []
     columns:
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: 793beb2d-ae9d-4e2a-ac97-75445dc1edcf
           stepCounter: 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
@@ -42,7 +39,6 @@ operation:
         config: {}
         dataType: NUMBER(12,2)
         description: ""
-        hashDetails: null
         name: ACCTBAL
         nullable: false
         sourceColumnReferences:
@@ -57,7 +53,6 @@ operation:
         config: {}
         dataType: VARCHAR(40)
         description: ""
-        hashDetails: null
         name: ADDRESS
         nullable: false
         sourceColumnReferences:
@@ -72,7 +67,6 @@ operation:
         config: {}
         dataType: VARCHAR(117)
         description: ""
-        hashDetails: null
         isChangeTracking: true
         name: COMMENT
         nullable: true
@@ -88,7 +82,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        hashDetails: null
         isBusinessKey: true
         name: CUSTKEY
         nullable: false
@@ -104,7 +97,6 @@ operation:
         config: {}
         dataType: VARCHAR(10)
         description: ""
-        hashDetails: null
         name: MKTSEGMENT
         nullable: true
         sourceColumnReferences:
@@ -119,7 +111,6 @@ operation:
         config: {}
         dataType: VARCHAR(10)
         description: ""
-        hashDetails: null
         isChangeTracking: true
         name: CREDIT_STATUS
         nullable: true
@@ -135,7 +126,6 @@ operation:
         config: {}
         dataType: VARCHAR(25)
         description: ""
-        hashDetails: null
         name: NAME
         nullable: false
         sourceColumnReferences:
@@ -150,7 +140,6 @@ operation:
         config: {}
         dataType: VARCHAR(15)
         description: ""
-        hashDetails: null
         name: PHONE
         nullable: false
         sourceColumnReferences:
@@ -158,10 +147,7 @@ operation:
               - columnCounter: 6d684809-2fcf-49ed-83f0-4e0713b5d06c
                 stepCounter: e7594ec0-1e16-4604-b36d-33e65c56b70c
             transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: e385a5c7-5d90-4d76-89a8-a4a53046ddd2
           stepCounter: 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
@@ -175,10 +161,7 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: 91a7e2c6-545c-4cdf-9d60-a526c7810f9e
           stepCounter: 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
@@ -192,15 +175,12 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: 3308c706-91de-4864-b189-d5043c492496
           stepCounter: 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
         config: {}
-        dataType: NUMBER
+        dataType: TIMESTAMP
         defaultValue: ""
         description: ""
         isSystemStartDate: true
@@ -209,10 +189,7 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: 5124e3b8-b9d9-4364-9b91-e92a606bd978
           stepCounter: 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
@@ -226,10 +203,7 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: eee4e46f-ffff-42b2-9fad-c6866b6445e2
           stepCounter: 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
@@ -243,10 +217,7 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: afd1ddf7-a88e-4b4c-b628-8c8c6d671f1c
           stepCounter: 724c4259-5b27-4e3d-a7aa-9a24ecfcf528
@@ -261,7 +232,10 @@ operation:
           - columnReferences: []
             transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
     cteString: ""
+    description: ""
+    destinationName: ""
     enabledColumnTestIDs: []
+    materializationOption: ""
     sourceMapping:
       - aliases: {}
         customSQL:
